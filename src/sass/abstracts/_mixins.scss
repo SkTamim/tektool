@@ -1,0 +1,42 @@
+@mixin responsive($size) {
+	@media screen and (max-width: $size) {
+		@content;
+	}
+}
+
+@mixin gradientText {
+	background-image: linear-gradient(
+		to right,
+		$color-primary-dark,
+		$color-primary-light
+	);
+	background-clip: text;
+	color: transparent;
+	display: inline-block;
+}
+@mixin gradientBackground {
+	background-image: linear-gradient(
+		to right,
+		$color-primary-dark,
+		$color-primary-light
+	);
+}
+
+@mixin absoluteCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin stylishBorderBottom {
+	&::after {
+		content: "";
+		width: 0;
+		height: 3px;
+		@include gradientBackground;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transition: all 0.3s ease-out;
+	}
+}

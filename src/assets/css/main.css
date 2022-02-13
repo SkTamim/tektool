@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-y-big {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 2rem 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5643fa), to(#2998ff));
+  background-image: linear-gradient(to right, #5643fa, #2998ff);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+  color: #2b2b2b;
+}
+
+.navbar {
+  height: 10rem;
+  width: 90%;
+  margin: 2rem auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 10rem;
+  padding: 0 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+}
+
+.navbar__logo-box {
+  margin: 0 2rem;
+}
+
+.navbar__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar__logo span {
+  display: block;
+  text-align: center;
+  line-height: 16px;
+}
+
+.navbar__logo span:first-child {
+  color: #5643fa;
+}
+
+.navbar__logo span:last-child {
+  color: #2998ff;
+}
+
+.navbar__list {
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.navbar__item {
+  margin: 0 1rem;
+}
+
+.navbar__link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar__link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5643fa), to(#2998ff));
+  background-image: linear-gradient(to right, #5643fa, #2998ff);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar__link:hover, .navbar__link.active {
+  background-image: -webkit-gradient(linear, left top, right top, from(#5643fa), to(#2998ff));
+  background-image: linear-gradient(to right, #5643fa, #2998ff);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.navbar__link:hover::after, .navbar__link.active::after {
+  width: 100%;
+}
+
+.section-box-shadows {
+  margin-top: 14rem;
+}
+
+.box-shadows-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-shadow {
+  width: 20rem;
+  height: 20rem;
+  margin: 4rem;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.box-shadow__text {
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box-shadow__copy-text {
+  font-size: 1.4rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box-shadow:hover .box-shadow__copy-text {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=main.css.map */
