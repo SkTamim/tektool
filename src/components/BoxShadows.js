@@ -6,6 +6,7 @@ import BoxShadowData from "./BoxShadowData";
 
 class BoxShadows extends Component {
 	render() {
+		document.title = "Web Tools - Shadows";
 		return (
 			<>
 				<section className='section-box-shadows margin-y-big'>
