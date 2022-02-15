@@ -1,0 +1,36 @@
+// Text Shadow container
+.text-shadows-container {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+// Main Text Shadow
+
+.text-shadow {
+	margin: 4rem;
+	background-color: $color-black;
+	height: 25rem;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	cursor: pointer;
+	color: $color-white;
+	&__main-text {
+		padding: 2rem 4rem;
+		font-size: 4rem;
+		font-weight: 700;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+
+		// text-shadow: 16px 22px 11px rgba(168, 158, 32, 0.8);
+	}
+	&__copy-text {
+		color: $color-white;
+		transition: all 0.3s;
+	}
+
+	&:hover &__copy-text {
+		transform: scale(1.1);
+	}
+}

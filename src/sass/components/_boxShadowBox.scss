@@ -2,7 +2,7 @@
 	width: 20rem;
 	height: 20rem;
 	margin: 4rem;
-	// background-color: $color-white;
+	background-color: $color-white;
 	border-radius: 5px;
 	@include absoluteCenter;
 	cursor: pointer;
@@ -21,4 +21,10 @@
 	&:hover &__copy-text {
 		transform: scale(1.1);
 	}
+}
+
+// Box Shadow container
+.box-shadows-container {
+	flex-wrap: wrap;
+	justify-content: center;
 }

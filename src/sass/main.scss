@@ -9,7 +9,13 @@
 
 // Layout files
 @import "./layout/header";
-@import "./layout/box-shadows";
+@import "./layout/footer";
 
 // Components files
 @import "./components/boxShadowBox";
+@import "./components/text-shadows";
+@import "./components/BackToTop";
+@import "./components/coming-soon";
+
+// Pages files
+@import "./pages/home";

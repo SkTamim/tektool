@@ -1,0 +1,16 @@
+.backToTop {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: $color-grey-dark;
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	cursor: pointer;
+	@include absoluteCenter;
+	&__icon {
+		font-size: 2rem;
+		color: $color-white;
+		padding: 1rem;
+	}
+}

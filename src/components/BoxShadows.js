@@ -9,7 +9,7 @@ class BoxShadows extends Component {
 		document.title = "Web Tools - Shadows";
 		return (
 			<>
-				<section className='section-box-shadows margin-y-big'>
+				<section className='section-box-shadows margin-y-big margin-top-for-nav'>
 					<div className='text-center'>
 						<h1 className='heading-primary'>Box Shadows</h1>
 					</div>
@@ -25,6 +25,7 @@ class BoxShadows extends Component {
 						})}
 					</div>
 				</section>
+				<hr />
 			</>
 		);
 	}

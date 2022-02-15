@@ -7,8 +7,14 @@
 }
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 body {
 	font-size: $default-font-size;
 	font-family: "Poppins", sans-serif;
+}
+#top {
+	position: absolute;
+	top: 0;
+	left: 0;
 }

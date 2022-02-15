@@ -1,40 +1,36 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class Header extends Component {
 	render() {
 		return (
 			<nav className='navbar d-flex'>
 				<div className='navbar__logo-box'>
-					<a href='#' className='navbar__logo'>
+					<NavLink to='/home' className='navbar__logo'>
 						<span>Web</span>
 						<span>Tools</span>
-					</a>
+					</NavLink>
 				</div>
 				<ul className='navbar__list d-flex'>
 					<li className='navbar__item'>
-						<a href='#' className='navbar__link'>
+						<NavLink to='/home' className='navbar__link'>
 							Home
-						</a>
+						</NavLink>
 					</li>
 					<li className='navbar__item'>
-						<a href='#' className='navbar__link active'>
-							Shadows
-						</a>
+						<NavLink to='/' className='navbar__link'>
+							Box Shadows
+						</NavLink>
 					</li>
 					<li className='navbar__item'>
-						<a href='#' className='navbar__link'>
+						<NavLink to='/text-shadows' className='navbar__link'>
+							Text Shadows
+						</NavLink>
+					</li>
+					<li className='navbar__item'>
+						<NavLink to='/coming-soon' className='navbar__link'>
 							Other
-						</a>
-					</li>
-					<li className='navbar__item'>
-						<a href='#' className='navbar__link'>
-							Other
-						</a>
-					</li>
-					<li className='navbar__item'>
-						<a href='#' className='navbar__link'>
-							Other
-						</a>
+						</NavLink>
 					</li>
 				</ul>
 			</nav>

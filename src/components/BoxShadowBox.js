@@ -24,6 +24,7 @@ class BoxShadowBox extends Component {
 	};
 
 	render() {
+		// Converting data to Style object
 		let shadowText = this.props.shadow.split(";")[2].slice(14).trim();
 		let styleObj = {
 			shadow: { boxShadow: shadowText },
