@@ -75,6 +75,12 @@ class TextShadowText extends Component {
 			});
 		}
 
+		// Color of Copy Text
+		let copyTextColor = JSON.stringify(styleObj);
+		let copyTextColorCondition = !copyTextColor.includes("transparent")
+			? JSON.parse(copyTextColor)
+			: "";
+
 		return (
 			<div
 				className='text-shadow d-flex'
@@ -84,7 +90,12 @@ class TextShadowText extends Component {
 				<div className='text-shadow__main-text' style={styleObj}>
 					{this.props.text}
 				</div>
-				<p className='text-shadow__copy-text'>{this.state.copyText}</p>
+				<p
+					className='text-shadow__copy-text'
+					style={{ color: copyTextColorCondition.color }}
+				>
+					{this.state.copyText}
+				</p>
 			</div>
 		);
 	}

@@ -269,7 +269,6 @@ a {
 }
 
 .text-shadow__copy-text {
-  color: #f6f6f6;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
