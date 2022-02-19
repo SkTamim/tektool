@@ -7,7 +7,7 @@
 // Main Text Shadow
 
 .text-shadow {
-	margin: 4rem;
+	margin: 0.5rem;
 	background-color: $color-black;
 	height: 25rem;
 	border-radius: 5px;
@@ -23,12 +23,5 @@
 		font-weight: 700;
 		letter-spacing: 5px;
 		text-transform: uppercase;
-	}
-	&__copy-text {
-		transition: all 0.3s;
-	}
-
-	&:hover &__copy-text {
-		transform: scale(1.1);
 	}
 }

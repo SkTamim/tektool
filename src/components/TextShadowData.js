@@ -21,7 +21,7 @@ let data = [
 		text: "Outlined",
 		bgStyle: "backgroundColor:#000;",
 		styles:
-			"color: #121212;\n text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac, -1px -1px 0 #c6c23f;",
+			"color: #121212;\n text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac, -1px -1px 0 #c6c23f; background-color:#000;",
 	},
 	{
 		id: "05",
@@ -172,6 +172,74 @@ let data = [
 		bgStyle: "backgroundColor:#090000; ",
 		styles:
 			" color: lightyellow; \n --color1: yellow; \n--color2: gold;\n --color3: orange;\n --color4:darkred; \n  text-shadow: 0 0 10px var(--color1),0 0 20px var(--color2),0 0 40px var(--color3),0 0 80px var(--color4); ",
+	},
+	{
+		id: "27",
+		text: "relief",
+		bgStyle: "backgroundColor:#3a50d9; ",
+		styles:
+			" color: #e0eff2; \n  text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;",
+	},
+	{
+		id: "28",
+		text: "close",
+		bgStyle: "backgroundColor:#fff; border:1px solid #000;",
+		styles:
+			" color: #202c2d; \n  text-shadow:0 1px #808d93,-1px 0 #cdd2d5,-1px 2px #808d93,-2px 1px #cdd2d5,-2px 3px #808d93,-3px 2px #cdd2d5,-3px 4px #808d93,-4px 3px #cdd2d5,-4px 5px #808d93,-5px 4px #cdd2d5,-5px 6px #808d93,-6px 5px #cdd2d5,-6px 7px #808d93,-7px 6px #cdd2d5,-7px 8px #808d93,-8px 7px #cdd2d5;",
+	},
+	{
+		id: "29",
+		text: "shadow",
+		bgStyle: "backgroundColor:#fff; border:1px solid #000;",
+		styles:
+			" color: #444; \n text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee,3px 2px 1px #ccc, 2px 3px 1px #eee,4px 3px 1px #ccc, 3px 4px 1px #eee,5px 4px 1px #ccc, 4px 5px 1px #eee,6px 5px 1px #ccc, 5px 6px 1px #eee,7px 6px 1px #ccc;",
+	},
+	{
+		id: "30",
+		text: "shadow",
+		bgStyle: "backgroundColor:#000;",
+		styles:
+			" color: #fff; \n text-shadow: 0px 0px 5px #FFF, 0px 0px 10px #FFF, 0px 0px 15px #FFF, 0px 0px 20px #FF2D95, 0px 0px 30px #FF2D95, 0px 0px 40px #FF2D95, 0px 0px 50px #FF2D95, 0px 0px 75px #FF2D95;",
+	},
+	{
+		id: "31",
+		text: "shadow",
+		bgStyle: "backgroundColor:#000;",
+		styles:
+			" color: #fff; \n text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;",
+	},
+	{
+		id: "32",
+		text: "shadow",
+		bgStyle: "backgroundColor:#2C2E38;",
+		styles:
+			" color: #D7CEB2; \n text-shadow: 3px 3px 0px #2C2E38, 5px 5px 0px #5C5F72;",
+	},
+	{
+		id: "33",
+		text: "shadow",
+		bgStyle: "backgroundColor:#7CA0B6;",
+		styles:
+			" color: #fff; \n text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;",
+	},
+	{
+		id: "34",
+		text: "shadow",
+		bgStyle: "backgroundColor:#000;",
+		styles: " color: #FB4264; \n text-shadow: 0 0 3vw #F40A35;",
+	},
+	{
+		id: "35",
+		text: "shadow",
+		bgStyle: "backgroundColor:#000;",
+		styles: " color: #426DFB; \n  text-shadow: 0 0 3vw #2356FF;",
+	},
+	{
+		id: "36",
+		text: "shadow",
+		bgStyle: "backgroundColor:#222;",
+		styles:
+			" color: #fff; \n  text-shadow:-3px -3px 0 #222,3px -3px 0 #222,-3px 3px 0 #222,3px 3px 0 #222,4px 4px 0 #fff,5px 5px 0 #fff,6px 6px 0 #fff,7px 7px 0 #fff;",
 	},
 ];
 

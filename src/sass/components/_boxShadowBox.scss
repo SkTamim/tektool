@@ -1,7 +1,7 @@
 .box-shadow {
 	width: 20rem;
 	height: 20rem;
-	margin: 4rem;
+	margin: 0.5rem;
 	background-color: $color-white;
 	border-radius: 5px;
 	@include absoluteCenter;
@@ -13,13 +13,6 @@
 		font-weight: 500;
 		text-transform: uppercase;
 		transition: all 0.3s;
-	}
-	&__copy-text {
-		font-size: 1.4rem;
-		transition: all 0.3s;
-	}
-	&:hover &__copy-text {
-		transform: scale(1.1);
 	}
 }
 
