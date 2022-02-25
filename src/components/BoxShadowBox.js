@@ -21,7 +21,6 @@ class BoxShadowBox extends Component {
 					style={styleObj.shadow}
 				>
 					<h4 className='box-shadow__text'>Shadow {this.props.number}</h4>
-					{/* <p className='box-shadow__copy-text'>{this.state.copyText}</p> */}
 				</div>
 			</ToolTip>
 		);

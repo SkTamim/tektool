@@ -241,6 +241,61 @@ let data = [
 		styles:
 			" color: #fff; \n  text-shadow:-3px -3px 0 #222,3px -3px 0 #222,-3px 3px 0 #222,3px 3px 0 #222,4px 4px 0 #fff,5px 5px 0 #fff,6px 6px 0 #fff,7px 7px 0 #fff;",
 	},
+	{
+		id: "37",
+		text: "Mystic",
+		bgStyle: "backgroundColor:#5e5555;",
+		styles:
+			" color: rgba(255, 255, 255, 0.596); \n  text-shadow: 20px 0px 10px rgb(0, 0, 0);",
+	},
+	{
+		id: "38",
+		text: "Mystic",
+		bgStyle: "backgroundColor:#fff; border:1px solid #000; ",
+		styles:
+			" color:rgb(255, 0, 0); \n  text-shadow: 0px -3px rgb(255, 196, 0);",
+	},
+	{
+		id: "39",
+		text: "Bungee",
+		bgStyle: "backgroundColor:#222; ",
+		styles:
+			" color:rgb(160, 12, 12); \n   text-shadow: rgb(66 45 45) -2px 5px 0px;",
+	},
+	{
+		id: "40",
+		text: "Radioactive",
+		bgStyle: "backgroundColor:#27292d; ",
+		styles:
+			" color: rgb(97, 214, 43); \n text-shadow: rgb(87 255 9) -10px -10px 20px;",
+	},
+	{
+		id: "41",
+		text: "Prickly",
+		bgStyle: "backgroundColor:#fff; border:1px solid #000; ",
+		styles: " color: #000; \n  text-shadow: rgb(119 119 119) -10px -10px 2px;",
+	},
+	{
+		id: "42",
+		text: "Codystar",
+		bgStyle: "backgroundColor:#fff; border:1px solid #000; ",
+		styles:
+			" color: rgb(55, 58, 255); \n text-shadow: 1px 1px 10px rgb(16, 72, 255), 1px 1px 10px rgb(0, 195, 255);",
+	},
+	{
+		id: "43",
+		text: "shadow",
+		bgStyle: "backgroundColor:#000; ",
+		styles:
+			" color: #fff; \n text-shadow:#888 -2px -2px 0px, #888 3px 3px 0px, #888 5px 5px 0px;",
+	},
+	{
+		id: "44",
+		text: "Shadow",
+		bgStyle: "backgroundColor:#000; ",
+		styles:
+			" color:  rgb(94, 94, 94); \n  text-shadow: 3px 3px #ffff00; \n filter: drop-shadow(-5px 5px 20px #fff000);",
+	},
 ];
 
 export default data;

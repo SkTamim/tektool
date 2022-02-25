@@ -54,6 +54,10 @@ a {
   color: #333;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .heading-primary {
   text-transform: uppercase;
   font-weight: 500;
@@ -153,7 +157,7 @@ a {
   transition: all 0.3s ease-out;
 }
 
-.navbar__link:hover, .navbar__link.active {
+.navbar__link:hover, .navbar__link:focus, .navbar__link.active {
   background-image: -webkit-gradient(linear, left top, right top, from(#5643fa), to(#2998ff));
   background-image: linear-gradient(to right, #5643fa, #2998ff);
   background-clip: text;
@@ -161,7 +165,7 @@ a {
   display: inline-block;
 }
 
-.navbar__link:hover::after, .navbar__link.active::after {
+.navbar__link:hover::after, .navbar__link:focus::after, .navbar__link.active::after {
   width: 100%;
 }
 
@@ -297,7 +301,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 86vh;
+  height: 87vh;
 }
 
 .tooltip {
@@ -337,7 +341,7 @@ a {
   color: var(--tooltip-text-color);
 }
 
-.tooltip:hover::before, .tooltip:hover::after {
+.tooltip:hover::before, .tooltip:hover::after, .tooltip:focus::before, .tooltip:focus:after {
   --scale: 1;
   visibility: visible;
 }
@@ -351,6 +355,118 @@ a {
           transform-origin: top center;
 }
 
+.search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #333;
+}
+
+.search-box__input, .search-box__filter, .search-box__search-button {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-box__input {
+  width: 40%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-box__filter {
+  border-radius: 0;
+  border: 1px solid #5c5c5c87;
+}
+
+.search-box__search-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5643fa), to(#2998ff));
+  background-image: linear-gradient(to right, #5643fa, #2998ff);
+  color: #f6f6f6;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.search-box__search-button:hover {
+  background-image: linear-gradient(145deg, #5643fa, #2998ff);
+}
+
+.search-box__search-button:active {
+  -webkit-box-shadow: inset -3px 3px 6px #5643fa;
+          box-shadow: inset -3px 3px 6px #5643fa;
+}
+
+.spinner {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+}
+
+.spinner .path {
+  stroke: #6c5cfb;
+  stroke-linecap: round;
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,6 +477,49 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 86vh;
+  height: 87vh;
+}
+
+.entities {
+  margin: 2rem 6rem;
+  font-weight: 500;
+}
+
+.entities__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #5c5c5c87;
+  padding: 1rem 0.5rem;
+}
+
+.entities__column {
+  padding: 0.6rem 1rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.entities__character {
+  font-size: 3rem;
+}
+
+.entities__heading {
+  margin: 2rem 6rem;
+  text-transform: uppercase;
+}
+
+.entities__heading h5 {
+  font-weight: 600;
+}
+
+.entities__tooltip {
+  width: 100%;
+  height: 100%;
+}
+
+.entities-loading {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

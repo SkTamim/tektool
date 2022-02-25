@@ -51,6 +51,7 @@
 
 		@include stylishBorderBottom;
 		&:hover,
+		&:focus,
 		&.active {
 			// color: $color-primary-dark;
 			@include gradientText;

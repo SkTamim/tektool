@@ -36,7 +36,9 @@
 	}
 
 	&:hover::before,
-	&:hover::after {
+	&:hover::after,
+	&:focus::before,
+	&:focus:after {
 		--scale: 1;
 		visibility: visible;
 	}

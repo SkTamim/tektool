@@ -28,8 +28,8 @@ class Header extends Component {
 						</NavLink>
 					</li>
 					<li className='navbar__item'>
-						<NavLink to='/coming-soon' className='navbar__link'>
-							Other
+						<NavLink to='/html-entities' className='navbar__link'>
+							HTML Entities
 						</NavLink>
 					</li>
 				</ul>

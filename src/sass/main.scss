@@ -18,5 +18,9 @@
 @import "./components/coming-soon";
 @import "./components/tool-tip";
 
+@import "../components/Search\ Box/SearchBox";
+@import "../components/Loading/loading";
+
 // Pages files
 @import "./pages/home";
+@import "./pages/html-entities";

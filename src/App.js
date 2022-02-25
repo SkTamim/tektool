@@ -6,8 +6,7 @@ import Header from "./components/Header";
 import TextShadows from "./components/TextShadows";
 import BackToTop from "./components/BackToTop";
 import Home from "./components/Home";
-import ComingSoon from "./components/ComingSoon";
-
+import HtmlEntities from "./components/HTML Entities/HtmlEntities";
 function App() {
 	return (
 		<>
@@ -18,7 +17,7 @@ function App() {
 				<Route path='/home' element={<Home />} />
 				<Route path='/' element={<BoxShadows />} />
 				<Route path='/text-shadows' element={<TextShadows />} />
-				<Route path='/coming-soon' element={<ComingSoon />} />
+				<Route path='/html-entities' element={<HtmlEntities />} />
 			</Routes>
 			{/* <BoxShadows />
 			<TextShadows /> */}
