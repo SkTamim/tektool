@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class BackToTop extends Component {
+class BackToTop extends Component {
 	render() {
 		return (
 			<div className='backToTop'>

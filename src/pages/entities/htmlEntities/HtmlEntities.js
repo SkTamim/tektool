@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Loading from "../Loading/Loading";
-import SearchBox from "../Search Box/SearchBox";
+import Loading from "../../../components/loading/Loading";
+import SearchBox from "../../../components/searchBox/SearchBox";
 import HtmlEntity from "./HtmlEntity";
 import HtmlEntityHeading from "./HtmlEntityHeading";
 

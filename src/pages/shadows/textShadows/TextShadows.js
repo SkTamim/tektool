@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TextShadowText from "./TextShadowText";
-import TextShadowData from "./TextShadowData";
+import TextShadowData from "./textShadowData/TextShadowData";
 
 // console.log(TextShadowData[0].styles);
 class TextShadows extends Component {

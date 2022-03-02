@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import BoxShadowBox from "./BoxShadowBox";
-import BoxShadowData from "./BoxShadowData";
+import BoxShadowData from "./boxShadowData/BoxShadowData";
 
 // console.log(BoxShadowData[0].shadow);
 

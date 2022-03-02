@@ -1,5 +1,5 @@
 import React from "react";
-import ToolTip from "../ToolTip";
+import ToolTip from "../../../components/toolTip/ToolTip";
 
 function HtmlEntity(props) {
 	const copyHandler = (copyData) => {

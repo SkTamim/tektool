@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ToolTip from "./ToolTip";
+import ToolTip from "../../../components/toolTip/ToolTip";
 
 class TextShadowText extends Component {
 	clickHandler = () => {

@@ -1,26 +1,26 @@
 import "./assets/css/main.css";
 import { Routes, Route } from "react-router-dom";
-import BoxShadows from "./components/BoxShadows";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import TextShadows from "./components/TextShadows";
-import BackToTop from "./components/BackToTop";
-import Home from "./components/Home";
-import HtmlEntities from "./components/HTML Entities/HtmlEntities";
+
+import Home from "./pages/home/Home";
+import BoxShadows from "./pages/shadows/boxShadows/BoxShadows";
+import TextShadows from "./pages/shadows/textShadows/TextShadows";
+import HtmlEntities from "./pages/entities/htmlEntities/HtmlEntities";
+import BackToTop from "./components/backToTop/BackToTop";
+import NavBar from "./components/navBar/NavBar";
+import Footer from "./components/footer/Footer";
+
 function App() {
 	return (
 		<>
 			<div id='top'></div>
 
-			<Header />
+			<NavBar />
 			<Routes>
 				<Route path='/home' element={<Home />} />
 				<Route path='/' element={<BoxShadows />} />
 				<Route path='/text-shadows' element={<TextShadows />} />
 				<Route path='/html-entities' element={<HtmlEntities />} />
 			</Routes>
-			{/* <BoxShadows />
-			<TextShadows /> */}
 			<Footer />
 			<BackToTop />
 		</>
