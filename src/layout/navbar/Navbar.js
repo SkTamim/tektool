@@ -12,25 +12,10 @@ import {
 	Toolbar,
 } from "@mui/material";
 import HideAppBar from "./HideOnScroll";
-
-const useStyles = makeStyles((theme) => ({
-	desktopLinks: {
-		color: theme.palette.darkBg.color,
-		fontWeight: 400,
-		fontSize: "0.9rem",
-		"&.active": {
-			backgroundColor: theme.palette.darkBg.bg,
-			color: theme.palette.darkBg.text,
-		},
-	},
-	logo: {
-		color: theme.palette.primary.text,
-	},
-}));
+import { DesktopPages, MobilePages } from "./NavPages";
+import Logo from "./Logo";
 
 const Navbar = () => {
-	const classes = useStyles();
-
 	// Drawer State & Function
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 	const toggleDrawer = (open) => (event) => {
@@ -43,95 +28,19 @@ const Navbar = () => {
 		}
 		setIsDrawerOpen(open);
 	};
-
-	const home = (
-		<Button
-			sx={{ m: 1 }}
-			className={classes.desktopLinks}
-			component={NavLink}
-			to='/'
-			key='home'
-		>
-			Home
-		</Button>
-	);
-	const resources = (
-		<Button
-			sx={{ m: 1 }}
-			className={classes.desktopLinks}
-			component={NavLink}
-			to='/resources'
-			key='resources'
-		>
-			Resources
-		</Button>
-	);
-	const shadows = (
-		<Button
-			sx={{ m: 1 }}
-			className={classes.desktopLinks}
-			component={NavLink}
-			to='/shadows'
-			key='shadows'
-		>
-			Shadows
-		</Button>
-	);
-	const textShadows = (
-		<Button
-			sx={{ m: 1 }}
-			className={classes.desktopLinks}
-			component={NavLink}
-			to='/text-shadows'
-			key='textShadows'
-		>
-			Text Shadows
-		</Button>
-	);
-	const entities = (
-		<Button
-			sx={{ m: 1 }}
-			className={classes.desktopLinks}
-			component={NavLink}
-			to='/html-entities'
-			key='entities'
-		>
-			Entities
-		</Button>
-	);
-	const learn = (
-		<Button
-			sx={{ m: 1 }}
-			className={classes.desktopLinks}
-			component={NavLink}
-			to='/learn'
-			key='learn'
-		>
-			Learn
-		</Button>
-	);
-
-	const pages = [home, resources, shadows, textShadows, entities, learn];
 	return (
 		<>
 			<HideAppBar>
 				<Toolbar>
 					<Container disableGutters maxWidth='xl' sx={{ display: "flex" }}>
-						<Typography
-							variant='h6'
-							noWrap
-							component={NavLink}
-							to='/'
+						<Logo
 							sx={{
 								mr: 2,
 								ml: 2,
 								display: { xs: "none", md: "flex" },
 								alignItems: "center",
 							}}
-							className={classes.logo}
-						>
-							TekTool
-						</Typography>
+						/>
 
 						<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
 							<IconButton
@@ -147,31 +56,16 @@ const Navbar = () => {
 							</IconButton>
 						</Box>
 
-						<Typography
-							variant='h6'
-							noWrap
-							component={NavLink}
-							to='/home'
+						<Logo
 							sx={{
 								flexGrow: 1,
 								display: { xs: "flex", md: "none" },
 								justifyContent: "flex-end",
 								alignItems: "center",
 							}}
-							className={classes.logo}
-						>
-							TekTool
-						</Typography>
+						/>
 
-						<Box
-							sx={{
-								flexGrow: 1,
-								display: { xs: "none", md: "flex" },
-								justifyContent: "flex-end",
-							}}
-						>
-							{pages.map((page) => page)}
-						</Box>
+						<DesktopPages />
 					</Container>
 				</Toolbar>
 			</HideAppBar>
@@ -188,11 +82,7 @@ const Navbar = () => {
 					onClick={toggleDrawer(false)}
 					onKeyDown={toggleDrawer(false)}
 				>
-					{pages.map((page) => (
-						<Button key={page} sx={{ m: 2, display: "block" }}>
-							{page}
-						</Button>
-					))}
+					<MobilePages />
 				</Box>
 			</SwipeableDrawer>
 		</>
