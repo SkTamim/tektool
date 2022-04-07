@@ -7,10 +7,6 @@ const SearchBox = (props) => {
 		setSearchText(event.target.value);
 	};
 
-	const searchFilterHandler = (event) => {
-		props.onFilter(event.target.value);
-	};
-
 	const searchHandler = (event) => {
 		event.preventDefault();
 		props.search({
@@ -36,11 +32,7 @@ const SearchBox = (props) => {
 				value={searchText}
 			/>
 
-			<select
-				id='filter'
-				className='search-box__filter'
-				onChange={searchFilterHandler}
-			>
+			<select id='filter' className='search-box__filter'>
 				<option value='all'>All</option>
 				{props.options.map((element, index) => {
 					return (

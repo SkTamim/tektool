@@ -20,7 +20,11 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: "0.9rem",
 		"&.active": {
 			backgroundColor: theme.palette.darkBg.bg,
+			color: theme.palette.darkBg.text,
 		},
+	},
+	logo: {
+		color: theme.palette.primary.text,
 	},
 }));
 
@@ -45,23 +49,23 @@ const Navbar = () => {
 			sx={{ m: 1 }}
 			className={classes.desktopLinks}
 			component={NavLink}
-			to='/home'
+			to='/'
 			key='home'
 		>
 			Home
 		</Button>
 	);
-	// const resources = (
-	// 	<Button
-	// 		sx={{ m: 1 }}
-	// 		className={classes.desktopLinks}
-	// 		component={NavLink}
-	// 		to='/resources'
-	// 		key='resources'
-	// 	>
-	// 		Resources
-	// 	</Button>
-	// );
+	const resources = (
+		<Button
+			sx={{ m: 1 }}
+			className={classes.desktopLinks}
+			component={NavLink}
+			to='/resources'
+			key='resources'
+		>
+			Resources
+		</Button>
+	);
 	const shadows = (
 		<Button
 			sx={{ m: 1 }}
@@ -95,8 +99,19 @@ const Navbar = () => {
 			Entities
 		</Button>
 	);
+	const learn = (
+		<Button
+			sx={{ m: 1 }}
+			className={classes.desktopLinks}
+			component={NavLink}
+			to='/learn'
+			key='learn'
+		>
+			Learn
+		</Button>
+	);
 
-	const pages = [home, shadows, textShadows, entities];
+	const pages = [home, resources, shadows, textShadows, entities, learn];
 	return (
 		<>
 			<HideAppBar>
@@ -106,16 +121,16 @@ const Navbar = () => {
 							variant='h6'
 							noWrap
 							component={NavLink}
-							to='/home'
+							to='/'
 							sx={{
 								mr: 2,
 								ml: 2,
 								display: { xs: "none", md: "flex" },
 								alignItems: "center",
-								color: "#fff",
 							}}
+							className={classes.logo}
 						>
-							LOGO
+							TekTool
 						</Typography>
 
 						<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -142,10 +157,10 @@ const Navbar = () => {
 								display: { xs: "flex", md: "none" },
 								justifyContent: "flex-end",
 								alignItems: "center",
-								color: "#fff",
 							}}
+							className={classes.logo}
 						>
-							LOGO
+							TekTool
 						</Typography>
 
 						<Box

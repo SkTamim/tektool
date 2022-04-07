@@ -1,10 +1,8 @@
 import { Box } from "@mui/system";
+import React from "react";
+import ComingSoon from "../../helper/ComingSoon";
 
-import ComingSoon from "../../../helper/ComingSoon";
-
-function HtmlEntities() {
-	document.title = "Web Tools - Entities";
-
+const Resources = () => {
 	return (
 		<Box
 			sx={{
@@ -17,6 +15,6 @@ function HtmlEntities() {
 			<ComingSoon />
 		</Box>
 	);
-}
+};
 
-export default HtmlEntities;
+export default Resources;

@@ -9,6 +9,8 @@ import HtmlEntities from "./pages/entities/htmlEntities/HtmlEntities";
 import BackToTop from "./components/backToTop/BackToTop";
 import Navbar from "./layout/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import Resources from "./pages/resources/Resources";
+import Learn from "./pages/learn/Learn";
 
 function App() {
 	return (
@@ -19,10 +21,11 @@ function App() {
 				<Navbar />
 				<Routes>
 					<Route path='/' element={<Home />} />
-					<Route path='/home' element={<Home />} />
+					<Route path='/resources' element={<Resources />} />
 					<Route path='/shadows' element={<BoxShadows />} />
 					<Route path='/text-shadows' element={<TextShadows />} />
 					<Route path='/html-entities' element={<HtmlEntities />} />
+					<Route path='/learn' element={<Learn />} />
 				</Routes>
 				<Footer />
 			</StyledEngineProvider>
