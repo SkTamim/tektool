@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import styles from "./ToolTip.module.css";
 
-function ToolTip(props) {
+const ToolTip = (props) => {
 	const [title, setTitle] = useState("Click to Copy");
 
 	const clickHandler = () => {
@@ -11,10 +12,7 @@ function ToolTip(props) {
 		}, 2000);
 	};
 
-	let classes = "tooltip";
-	if (props.className) {
-		classes = "tooltip" + " " + props.className;
-	}
+	let classes = `${styles.tooltip} ${props.className}`;
 	return (
 		<>
 			<div
@@ -26,6 +24,6 @@ function ToolTip(props) {
 			</div>
 		</>
 	);
-}
+};
 
 export default ToolTip;

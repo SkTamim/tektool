@@ -7,7 +7,7 @@ import BoxShadows from "./pages/shadows/boxShadows/BoxShadows";
 import TextShadows from "./pages/shadows/textShadows/TextShadows";
 import HtmlEntities from "./pages/entities/htmlEntities/HtmlEntities";
 import Navbar from "./layout/navbar/Navbar";
-import Footer from "./components/footer/Footer";
+import Footer from "./layout/footer/Footer";
 import Resources from "./pages/resources/Resources";
 import Learn from "./pages/learn/Learn";
 
