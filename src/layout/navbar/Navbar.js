@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+
 import MenuIcon from "@mui/icons-material/Menu";
-import { makeStyles } from "@mui/styles";
 import {
 	Box,
 	Container,
 	IconButton,
-	Typography,
-	Button,
 	SwipeableDrawer,
 	Toolbar,
 } from "@mui/material";

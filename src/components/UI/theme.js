@@ -36,7 +36,7 @@ const theme = createTheme({
 		},
 		darkBg: {
 			bg: "#02155A",
-			color: "#E4F0FF",
+			text: "#E4F0FF",
 		},
 	},
 });

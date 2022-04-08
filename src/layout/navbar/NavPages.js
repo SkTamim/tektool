@@ -7,19 +7,19 @@ import Logo from "./Logo";
 
 const useStyles = makeStyles((theme) => ({
 	desktopLinks: {
-		color: theme.palette.darkBg.color,
+		color: theme.palette.darkBg.text,
 		fontWeight: 400,
 		fontSize: "0.9rem",
 		"&.active": {
 			backgroundColor: theme.palette.darkBg.bg,
-			color: theme.palette.darkBg.color,
+			color: theme.palette.darkBg.text,
 		},
 	},
 	mobileLinks: {
 		textAlign: "center",
 		"&.active": {
 			backgroundColor: theme.palette.darkBg.bg,
-			color: theme.palette.darkBg.color,
+			color: theme.palette.darkBg.text,
 		},
 	},
 }));
@@ -76,7 +76,7 @@ export const DesktopPages = () => {
 			sx={{ m: 1 }}
 			className={classes.desktopLinks}
 			component={NavLink}
-			to='/html-entities'
+			to='/entities'
 			key='entities'
 		>
 			Entities

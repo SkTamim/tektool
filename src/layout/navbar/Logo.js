@@ -19,6 +19,7 @@ const Logo = (props) => {
 			to='/'
 			sx={props.sx}
 			className={classes.logo}
+			{...props}
 		>
 			TekTool
 		</Typography>
