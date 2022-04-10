@@ -19,6 +19,9 @@ const ButtonPrimary = (props) => {
 			variant='contained'
 			className={`${classes.root} ${props.className}`}
 			sx={props.sx}
+			size={props.size}
+			component={props.component}
+			to={props.to}
 		>
 			{props.children}
 		</Button>

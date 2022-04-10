@@ -16,16 +16,17 @@ function App() {
 		<>
 			<StyledEngineProvider injectFirst>
 				<CssBaseline />
-
 				<Navbar />
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/resources' element={<Resources />} />
-					<Route path='/shadows' element={<BoxShadows />} />
-					<Route path='/text-shadows' element={<TextShadows />} />
-					<Route path='/entities' element={<HtmlEntities />} />
-					<Route path='/learn' element={<Learn />} />
-				</Routes>
+				<main style={{ marginTop: "50px" }}>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/resources' element={<Resources />} />
+						<Route path='/shadows' element={<BoxShadows />} />
+						<Route path='/text-shadows' element={<TextShadows />} />
+						<Route path='/entities' element={<HtmlEntities />} />
+						<Route path='/learn' element={<Learn />} />
+					</Routes>
+				</main>
 				<Footer />
 			</StyledEngineProvider>
 		</>

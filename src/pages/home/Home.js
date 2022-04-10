@@ -1,15 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+import Hero from "./Hero";
 
-export class Home extends Component {
-	render() {
-		return (
-			<div className='home'>
-				<div className='home__text'>
-					<h1 className='heading-primary'>Home Page</h1>
-				</div>
-			</div>
-		);
-	}
-}
+const Home = () => {
+	return (
+		<>
+			<Hero />
+		</>
+	);
+};
 
 export default Home;

@@ -17,9 +17,12 @@ const useStyles = makeStyles((theme) => ({
 	},
 	mobileLinks: {
 		textAlign: "center",
+		color: theme.palette.darkBg.bg,
+		fontWeight: 600,
 		"&.active": {
 			backgroundColor: theme.palette.darkBg.bg,
 			color: theme.palette.darkBg.text,
+			fontWeight: 500,
 		},
 	},
 }));
@@ -178,7 +181,16 @@ export const MobilePages = () => {
 		</Button>
 	);
 	const logo = (
-		<Logo key='logo' sx={{ m: 2, textAlign: "center", display: "block" }} />
+		<Logo
+			key='logo'
+			sx={{
+				m: 2,
+				textAlign: "center",
+				display: "block",
+				color: "#02155A !important",
+				fontSize: "2rem",
+			}}
+		/>
 	);
 	const divider = <Divider key='divider' />;
 

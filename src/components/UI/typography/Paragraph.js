@@ -4,13 +4,14 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles((theme) => ({
 	root: {
 		color: theme.palette.accent.darkGrey,
+		margin: "16px 0",
 	},
 }));
 
 const Paragraph = (props) => {
 	const classes = useStyles();
 	return (
-		<p className={`${classes.root} ${props.className}`} sx={props.sx}>
+		<p className={`${classes.root} ${props.className}`} style={props.style}>
 			{props.children}
 		</p>
 	);

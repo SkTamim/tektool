@@ -28,7 +28,7 @@ const Navbar = () => {
 	return (
 		<>
 			<HideAppBar>
-				<Toolbar>
+				<Toolbar component='nav'>
 					<Container disableGutters maxWidth='xl' sx={{ display: "flex" }}>
 						<Logo
 							sx={{
@@ -55,7 +55,6 @@ const Navbar = () => {
 
 						<Logo
 							sx={{
-								flexGrow: 1,
 								display: { xs: "flex", md: "none" },
 								justifyContent: "flex-end",
 								alignItems: "center",
@@ -78,6 +77,7 @@ const Navbar = () => {
 					role='presentation'
 					onClick={toggleDrawer(false)}
 					onKeyDown={toggleDrawer(false)}
+					sx={{ px: 2 }}
 				>
 					<MobilePages />
 				</Box>
