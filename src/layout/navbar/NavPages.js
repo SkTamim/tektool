@@ -18,11 +18,12 @@ const useStyles = makeStyles((theme) => ({
 	mobileLinks: {
 		textAlign: "center",
 		color: theme.palette.darkBg.bg,
-		fontWeight: 600,
+		fontWeight: 500,
+		fontSize: "1.2rem",
+		padding: "6px 16px",
 		"&.active": {
 			backgroundColor: theme.palette.darkBg.bg,
 			color: theme.palette.darkBg.text,
-			fontWeight: 500,
 		},
 	},
 }));

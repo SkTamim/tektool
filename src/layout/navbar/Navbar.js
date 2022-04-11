@@ -49,7 +49,7 @@ const Navbar = () => {
 								color='inherit'
 								onClick={toggleDrawer(true)}
 							>
-								<MenuIcon />
+								<MenuIcon sx={{ fontSize: "2.2rem" }} />
 							</IconButton>
 						</Box>
 
@@ -58,6 +58,7 @@ const Navbar = () => {
 								display: { xs: "flex", md: "none" },
 								justifyContent: "flex-end",
 								alignItems: "center",
+								fontSize: "1.7rem",
 							}}
 						/>
 
