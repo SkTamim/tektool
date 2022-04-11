@@ -4,6 +4,7 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles((theme) => ({
 	root: {
 		backgroundClip: "text",
+		["-webkit-background-clip"]: "text",
 		backgroundImage: `linear-gradient(90deg,${theme.palette.gradientBlue.dark},${theme.palette.gradientBlue.light})`,
 		color: "transparent",
 		display: "inline-block",

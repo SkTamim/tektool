@@ -19,6 +19,8 @@ const ButtonSecondaryOutline = (props) => {
 			variant='outlined'
 			className={`${classes.root} ${props.className}`}
 			sx={props.sx}
+			component={props.component}
+			to={props.to}
 		>
 			{props.children}
 		</Button>

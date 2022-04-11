@@ -10,11 +10,13 @@ import heroImage from "../../assets/images/Software engineer-amico.svg";
 
 const useStyles = makeStyles((theme) => ({
 	leftGrid: {
-		marginTop: "8rem",
-		paddingLeft: "1rem",
+		marginTop: "6rem",
+		[theme.breakpoints.down("md")]: {
+			marginTop: "4rem",
+			paddingLeft: "0",
+		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "3rem",
-			paddingLeft: "0",
 		},
 	},
 	mainHeading: {
@@ -23,11 +25,11 @@ const useStyles = makeStyles((theme) => ({
 			fontSize: "2.3rem",
 		},
 		[theme.breakpoints.down("md")]: {
-			fontSize: "2rem",
+			fontSize: "2.2rem",
 		},
 	},
 	paragraph: {
-		maxWidth: "80%",
+		maxWidth: "85%",
 		[theme.breakpoints.down("md")]: {
 			maxWidth: "100%",
 			marginRight: ".5rem",
@@ -57,11 +59,13 @@ const Hero = () => {
 						The all in one plateform for developers
 					</Typography>
 					<Paragraph className={classes.paragraph}>
-						TekTool is an all-in-one platform for developers. where developers
-						can find various kinds of useful tools and resources.
+						TekTool is a one-stop platform specifically designed for the
+						ever-growing, demanding needs of developers, providing a complete
+						array of tools, resources, tutorials and a variety of other things
+						to facilitate maximum productivity.
 					</Paragraph>
 					<ButtonPrimary
-						sx={{ width: "max-content", mb: 2 }}
+						sx={{ width: "max-content", mb: 4, mt: 2 }}
 						size='large'
 						to='/resources'
 						component={NavLink}
