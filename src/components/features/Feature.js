@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	leftGrid: {
 		padding: "5rem 3rem",
-		[theme.breakpoints.down("sm")]: {
+		[theme.breakpoints.down("md")]: {
 			padding: "0",
 			paddingTop: "2rem",
 		},

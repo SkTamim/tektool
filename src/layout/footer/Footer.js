@@ -69,7 +69,7 @@ export const Footer = () => {
 						md={4}
 						sx={{ px: 3 }}
 					>
-						<Logo sx={{ display: "inline-block", fontSize: "2rem", mb: 1 }} />
+						<Logo color='blue' style={{ height: "80px" }} />
 						<Link
 							href='mailto:sktamim225@gmail.com'
 							underline='hover'

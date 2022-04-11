@@ -13,7 +13,6 @@ const Numbering = (props) => {
 				alignItems: "center",
 				justifyContent: "center",
 				borderRadius: "50%",
-				fontSize: "1.5rem",
 				...props.sx,
 			}}
 		>

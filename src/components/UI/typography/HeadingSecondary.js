@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
+import { Typography } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -20,14 +21,16 @@ const useStyles = makeStyles((theme) => ({
 const HeadingSecondary = (props) => {
 	const classes = useStyles();
 	return (
-		<h2
+		<Typography
 			className={`${classes.root} ${props.color && classes.blue} ${
 				props.className
 			}`}
 			sx={props.sx}
+			variant='h5'
+			componetn='h2'
 		>
 			{props.children}
-		</h2>
+		</Typography>
 	);
 };
 

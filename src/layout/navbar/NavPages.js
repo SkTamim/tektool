@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme) => ({
 	desktopLinks: {
 		color: theme.palette.darkBg.text,
 		fontWeight: 400,
-		fontSize: "0.9rem",
 		"&.active": {
 			backgroundColor: theme.palette.darkBg.bg,
 			color: theme.palette.darkBg.text,
@@ -19,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 		color: theme.palette.darkBg.bg,
 		fontWeight: 500,
-		fontSize: "1.2rem",
 		padding: "6px 16px",
 		"&.active": {
 			backgroundColor: theme.palette.darkBg.bg,
@@ -64,17 +62,6 @@ export const DesktopPages = () => {
 			Shadows
 		</Button>
 	);
-	const textShadows = (
-		<Button
-			sx={{ m: 1 }}
-			className={classes.desktopLinks}
-			component={NavLink}
-			to='/text-shadows'
-			key='textShadows'
-		>
-			Text Shadows
-		</Button>
-	);
 	const entities = (
 		<Button
 			sx={{ m: 1 }}
@@ -97,7 +84,7 @@ export const DesktopPages = () => {
 			Learn
 		</Button>
 	);
-	const desktopPages = [home, resources, shadows, textShadows, entities, learn];
+	const desktopPages = [home, resources, shadows, entities, learn];
 
 	return (
 		<Box
@@ -148,17 +135,6 @@ export const MobilePages = () => {
 			Shadows
 		</Button>
 	);
-	const textShadows = (
-		<Button
-			sx={{ m: 1, display: "block" }}
-			className={classes.mobileLinks}
-			component={NavLink}
-			to='/text-shadows'
-			key='textShadows'
-		>
-			Text Shadows
-		</Button>
-	);
 	const entities = (
 		<Button
 			sx={{ m: 1, display: "block" }}
@@ -188,9 +164,9 @@ export const MobilePages = () => {
 				m: 2,
 				textAlign: "center",
 				display: "block",
-				color: "#02155A !important",
-				fontSize: "2rem",
 			}}
+			style={{ height: "80px" }}
+			color='blue'
 		/>
 	);
 	const divider = <Divider key='divider' />;
@@ -201,7 +177,6 @@ export const MobilePages = () => {
 		home,
 		resources,
 		shadows,
-		textShadows,
 		entities,
 		learn,
 	];

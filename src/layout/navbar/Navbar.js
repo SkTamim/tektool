@@ -32,8 +32,6 @@ const Navbar = () => {
 					<Container disableGutters maxWidth='xl' sx={{ display: "flex" }}>
 						<Logo
 							sx={{
-								mr: 2,
-								ml: 2,
 								display: { xs: "none", md: "flex" },
 								alignItems: "center",
 							}}
@@ -49,7 +47,7 @@ const Navbar = () => {
 								color='inherit'
 								onClick={toggleDrawer(true)}
 							>
-								<MenuIcon sx={{ fontSize: "2.2rem" }} />
+								<MenuIcon />
 							</IconButton>
 						</Box>
 
@@ -58,7 +56,6 @@ const Navbar = () => {
 								display: { xs: "flex", md: "none" },
 								justifyContent: "flex-end",
 								alignItems: "center",
-								fontSize: "1.7rem",
 							}}
 						/>
 
@@ -78,7 +75,7 @@ const Navbar = () => {
 					role='presentation'
 					onClick={toggleDrawer(false)}
 					onKeyDown={toggleDrawer(false)}
-					sx={{ px: 2 }}
+					sx={{ px: 3 }}
 				>
 					<MobilePages />
 				</Box>

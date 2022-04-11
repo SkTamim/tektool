@@ -1,28 +1,45 @@
-import { Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import { Box } from "@mui/system";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const useStyles = makeStyles((theme) => ({
-	logo: {
-		color: theme.palette.primary.text,
-	},
+import logoBlack from "../../assets/images/Black Logo.svg";
+import logoBlue from "../../assets/images/Blue Logo.svg";
+import logoGreen from "../../assets/images/Green Logo.svg";
+
+const useStyles = makeStyles(() => ({
+	imageStyle: { height: "50px" },
 }));
 
 const Logo = (props) => {
 	const classes = useStyles();
 	return (
-		<Typography
-			variant='h6'
-			noWrap
-			component={NavLink}
-			to='/'
-			sx={props.sx}
-			className={classes.logo}
-			{...props}
-		>
-			TekTool
-		</Typography>
+		<Box component={NavLink} to='/' sx={props.sx}>
+			{!props.color && (
+				<img
+					src={logoBlack}
+					alt='Logo'
+					className={classes.imageStyle}
+					style={props.style}
+				/>
+			)}
+			{props.color === "blue" && (
+				<img
+					src={logoBlue}
+					alt='Logo'
+					className={classes.imageStyle}
+					style={props.style}
+				/>
+			)}
+			{props.color === "green" && (
+				<img
+					src={logoGreen}
+					alt='Logo'
+					className={classes.imageStyle}
+					style={props.style}
+				/>
+			)}
+		</Box>
 	);
 };
 
