@@ -1,8 +1,14 @@
 import React from "react";
-import ComingSoon from "../../helper/ComingSoon";
+import { Container, Grid } from "@mui/material";
+import ShadowsTab from "./shadowsTab/ShadowsTab";
+import BoxShadows from "./boxShadows/BoxShadows";
 
 const Shadows = () => {
-	return <ComingSoon />;
+	return (
+		<Container maxWidth='xl' sx={{ py: 3, height: "100vh" }}>
+			<ShadowsTab />
+		</Container>
+	);
 };
 
 export default Shadows;

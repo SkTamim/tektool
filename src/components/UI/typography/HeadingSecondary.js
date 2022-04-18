@@ -26,8 +26,8 @@ const HeadingSecondary = (props) => {
 				props.className
 			}`}
 			sx={props.sx}
-			variant='h5'
-			componetn='h2'
+			variant='h4'
+			component='h2'
 		>
 			{props.children}
 		</Typography>

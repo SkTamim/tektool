@@ -29,6 +29,14 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	paragraph: {},
+	featuresHeading: {
+		[theme.breakpoints.down("md")]: {
+			fontSize: "1.5rem",
+		},
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "1.4rem",
+		},
+	},
 }));
 const Feature = (props) => {
 	let myProps = props.feature;
@@ -38,7 +46,10 @@ const Feature = (props) => {
 			{myProps.order === "left" && (
 				<Grid item sm={6} className={classes.leftGrid}>
 					<Numbering number={myProps.number} />
-					<HeadingSecondary color={myProps.color}>
+					<HeadingSecondary
+						color={myProps.color}
+						className={classes.featuresHeading}
+					>
 						{myProps.heading}
 					</HeadingSecondary>
 					<Paragraph className={classes.paragraph}>
@@ -71,7 +82,10 @@ const Feature = (props) => {
 			{myProps.order === "right" && (
 				<Grid item sm={6} className={classes.rightGrid}>
 					<Numbering number={myProps.number} sx={{ ml: "auto" }} />
-					<HeadingSecondary color={myProps.color}>
+					<HeadingSecondary
+						color={myProps.color}
+						className={classes.featuresHeading}
+					>
 						{myProps.heading}
 					</HeadingSecondary>
 					<Paragraph className={classes.paragraph}>
