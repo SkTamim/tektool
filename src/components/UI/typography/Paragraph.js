@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
+import { Typography } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -11,9 +12,14 @@ const useStyles = makeStyles((theme) => ({
 const Paragraph = (props) => {
 	const classes = useStyles();
 	return (
-		<p className={`${classes.root} ${props.className}`} style={props.style}>
+		<Typography
+			component='p'
+			className={`${classes.root} ${props.className}`}
+			style={props.style}
+			sx={props.sx}
+		>
 			{props.children}
-		</p>
+		</Typography>
 	);
 };
 

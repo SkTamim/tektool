@@ -1,17 +1,23 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Box, IconButton } from "@mui/material";
+import { Tabs, Tab, Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import BoxShadows from "../boxShadows/BoxShadows";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import TextShadows from "../textShadows/TextShadows";
 
 const useStyles = makeStyles((theme) => ({
 	tabBox: {
 		backgroundColor: theme.palette.secondary.text,
 		color: theme.palette.secondary.dark,
-		width: "25%",
+		width: "300px",
 		marginLeft: "auto",
 		borderRadius: "50px",
+		[theme.breakpoints.down("sm")]: {
+			margin: "0 auto",
+			width: "250px",
+			"& button": {
+				fontSize: "12px",
+			},
+		},
 	},
 	tabs: {
 		borderRadius: "50px",
