@@ -1,6 +1,7 @@
 import { makeStyles } from "@mui/styles";
 import React from "react";
 import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
+import DarkBoxShadows from "./DarkBoxShadows";
 import LightBoxShadows from "./LightBoxShadows";
 
 const useStyles = makeStyles((theme) => ({
@@ -22,6 +23,7 @@ const BoxShadows = () => {
 			</HeadingSecondary>
 
 			<LightBoxShadows />
+			<DarkBoxShadows />
 		</>
 	);
 };
