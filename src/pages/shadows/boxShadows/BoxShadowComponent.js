@@ -48,22 +48,31 @@ const reducer = (state, action) => {
 	}
 };
 
-const LightBoxShadows = () => {
+const BoxShadowComponent = (props) => {
 	const classes = useStyles();
 	const [state, dispatch] = useReducer(reducer, initialDataState);
 
+	let boxShadowType = props.shadowType.toLowerCase();
+
 	useEffect(() => {
-		fetch("light-shadows.json")
+		fetch("box-shadows.json")
 			.then((responce) => responce.json())
 			.then((result) => {
-				dispatch({ type: "FETCH_SUCCESS", payload: result });
+				dispatch({
+					type: "FETCH_SUCCESS",
+					payload:
+						(boxShadowType === "light" && result.light) ||
+						(boxShadowType === "dark" && result.dark) ||
+						(boxShadowType === "inset" && result.inset) ||
+						(boxShadowType === "colored" && result.colored),
+				});
 			})
 			.catch(() => dispatch({ type: "FETCH_ERROR" }));
 	}, []);
 
 	return (
 		<div className={classes.root}>
-			<h4 className={classes.subHeading}>Light Shadows</h4>
+			<h4 className={classes.subHeading}>{props.shadowType} Shadows</h4>
 
 			<Grid container gap={8} justifyContent='center' py={4}>
 				{state.loading && <LoadingScreen />}
@@ -81,4 +90,4 @@ const LightBoxShadows = () => {
 	);
 };
 
-export default LightBoxShadows;
+export default BoxShadowComponent;
