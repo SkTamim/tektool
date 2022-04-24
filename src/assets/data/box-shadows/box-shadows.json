@@ -1,0 +1,556 @@
+[
+	[
+		{
+			"id": "L1",
+			"shadow": "-webkit-box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2); \n -moz-box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2); \n box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);"
+		},
+		{
+			"id": "L2",
+			"shadow": "-webkit-box-shadow:  0px 7px 29px 0px rgba(100, 100, 111, 0.2); \n -moz-box-shadow:  0px 7px 29px 0px rgba(100, 100, 111, 0.2); \n box-shadow:  0px 7px 29px 0px rgba(100, 100, 111, 0.2);"
+		},
+		{
+			"id": "L3",
+			"shadow": "-webkit-box-shadow: 1.95px 1.95px 2.6px  rgba(0, 0, 0, 0.15); \n -moz-box-shadow: 1.95px 1.95px 2.6px  rgba(0, 0, 0, 0.15); \n box-shadow: 1.95px 1.95px 2.6px  rgba(0, 0, 0, 0.15);"
+		},
+		{
+			"id": "L4",
+			"shadow": "-webkit-box-shadow:  0px 1px 4px rgba(0, 0, 0, 0.16); \n -moz-box-shadow:  0px 1px 4px rgba(0, 0, 0, 0.16); \n box-shadow:  0px 1px 4px rgba(0, 0, 0, 0.16);"
+		},
+		{
+			"id": "L5",
+			"shadow": "-webkit-box-shadow:  0px 1px 4px rgba(0, 0, 0, 0.16); \n -moz-box-shadow:  0px 1px 4px rgba(0, 0, 0, 0.16); \n box-shadow:  0px 1px 4px rgba(0, 0, 0, 0.16);"
+		},
+		{
+			"id": "L6",
+			"shadow": "-webkit-box-shadow:  0px 3px 8px rgba(0, 0, 0, 0.24); \n -moz-box-shadow:  0px 3px 8px rgba(0, 0, 0, 0.24); \n box-shadow:  0px 3px 8px rgba(0, 0, 0, 0.24);"
+		},
+		{
+			"id": "L7",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;\n -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;\n box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;"
+		},
+		{
+			"id": "L8",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;\n -moz-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;\n box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;"
+		},
+		{
+			"id": "L9",
+			"shadow": "-webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;\n -moz-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;\n box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;"
+		},
+		{
+			"id": "L10",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;"
+		},
+		{
+			"id": "L11",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
+		},
+		{
+			"id": "L12",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;"
+		},
+		{
+			"id": "L13",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;"
+		},
+
+		{
+			"id": "L14",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
+		},
+		{
+			"id": "L15",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;\n -moz-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;\n box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
+		},
+		{
+			"id": "L16",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;\n -moz-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;\n box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+		},
+		{
+			"id": "L17",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;\n -moz-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;\n box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"
+		},
+		{
+			"id": "L18",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;\n -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;\n box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+		},
+		{
+			"id": "L19",
+			"shadow": "-webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;\n -moz-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;\n box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;"
+		},
+		{
+			"id": "L20",
+			"shadow": "-webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;\n -moz-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;\n box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;"
+		},
+		{
+			"id": "L21",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;\n -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;\n box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;"
+		},
+		{
+			"id": "L22",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;\n box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;"
+		},
+		{
+			"id": "L23",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;\n box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;"
+		},
+		{
+			"id": "L24",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;\n -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;\n box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;"
+		},
+		{
+			"id": "L25",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;\n -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;\n box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;"
+		},
+		{
+			"id": "L26",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;\n -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;\n box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;"
+		},
+		{
+			"id": "L27",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;\n box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;"
+		},
+		{
+			"id": "L28",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;\n -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;\n box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;"
+		},
+		{
+			"id": "L29",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;\n -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;\n box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;"
+		},
+		{
+			"id": "L30",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;\n -moz-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;\n box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;"
+		},
+		{
+			"id": "L31",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;\n -moz-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;\n box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;"
+		},
+		{
+			"id": "L32",
+			"shadow": "-webkit-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;\n -moz-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;\n box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;"
+		},
+		{
+			"id": "L33",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;\n box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;"
+		},
+		{
+			"id": "L34",
+			"shadow": "-webkit-box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;\n -moz-box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;\n box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;"
+		},
+		{
+			"id": "L35",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;\n box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;"
+		},
+		{
+			"id": "L36",
+			"shadow": "-webkit-box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;\n -moz-box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;\n box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;"
+		},
+		{
+			"id": "L37",
+			"shadow": "-webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;\n -moz-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;\n box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
+		},
+		{
+			"id": "L38",
+			"shadow": "-webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;\n -moz-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;\n box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;"
+		},
+		{
+			"id": "L39",
+			"shadow": "-webkit-box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;\n -moz-box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;\n box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;"
+		},
+		{
+			"id": "L40",
+			"shadow": "-webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;\n -moz-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;\n box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;"
+		},
+		{
+			"id": "L41",
+			"shadow": "-webkit-box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;\n -moz-box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;\n box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;"
+		},
+		{
+			"id": "L42",
+			"shadow": "-webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;\n -moz-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;\n box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;"
+		},
+		{
+			"id": "L43",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;\n -moz-box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;\n box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;"
+		},
+		{
+			"id": "L44",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;\n -moz-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;\n box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;"
+		},
+		{
+			"id": "L45",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;\n box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;"
+		},
+		{
+			"id": "L46",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;\n -moz-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;\n box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;"
+		},
+		{
+			"id": "L47",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;\n -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;\n box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;"
+		},
+		{
+			"id": "L48",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;\n -moz-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;\n box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;"
+		},
+		{
+			"id": "L49",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;\n -moz-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;\n box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;"
+		},
+		{
+			"id": "L50",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;\n -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;\n box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;"
+		},
+		{
+			"id": "L51",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;\n -moz-box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;\n box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;"
+		},
+		{
+			"id": "L52",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;\n -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;\n box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;"
+		},
+		{
+			"id": "L53",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;\n -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;\n box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"
+		},
+		{
+			"id": "L54",
+			"shadow": "-webkit--webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;\n -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;\n box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;\n -moz--webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;\n -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;\n box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;\n -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;\n -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;\n box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;"
+		},
+
+		{
+			"id": "L55",
+			"shadow": "-webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;\n -moz-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;\n box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;"
+		},
+		{
+			"id": "L56",
+			"shadow": "-webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;\n -moz-box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;\n box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;"
+		},
+		{
+			"id": "L57",
+			"shadow": "-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\n -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\n box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
+		},
+		{
+			"id": "L68",
+			"shadow": "-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\n -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\n box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);"
+		},
+		{
+			"id": "L69",
+			"shadow": "-webkit-box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);\n -moz-box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);\n box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);"
+		},
+		{
+			"id": "L70",
+			"shadow": "-webkit-box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%), 0 0.6px 1.8px 0 rgb(0 0 0 / 11%);\n -moz-box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%), 0 0.6px 1.8px 0 rgb(0 0 0 / 11%);\n box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%), 0 0.6px 1.8px 0 rgb(0 0 0 / 11%);"
+		},
+		{
+			"id": "L71",
+			"shadow": "-webkit-box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);\n -moz-box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);\n box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);"
+		},
+
+		{
+			"id": "L72",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;\n box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;"
+		},
+		{
+			"id": "L73",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;\n box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;"
+		},
+		{
+			"id": "L74",
+			"shadow": "-webkit-box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px;\n -moz-box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px;\n box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px;"
+		},
+		{
+			"id": "L75",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;\n box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;"
+		},
+		{
+			"id": "L76",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;\n box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;"
+		},
+		{
+			"id": "L77",
+			"shadow": "-webkit-box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px;\n -moz-box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px;\n box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px;"
+		},
+		{
+			"id": "L78",
+			"shadow": "-webkit-box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;\n -moz-box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;\n box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;"
+		},
+		{
+			"id": "L79",
+			"shadow": "-webkit-box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;\n -moz-box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;\n box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;"
+		},
+		{
+			"id": "L80",
+			"shadow": "-webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;\n -moz-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;\n box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;"
+		},
+		{
+			"id": "L81",
+			"shadow": "-webkit-box-shadow: rgba(149, 157, 165, 0.3) 0px 12px 48px 0px;\n -moz-box-shadow: rgba(149, 157, 165, 0.3) 0px 12px 48px 0px;\n box-shadow: rgba(149, 157, 165, 0.3) 0px 12px 48px 0px;"
+		},
+		{
+			"id": "L82",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;\n box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;"
+		},
+		{
+			"id": "L83",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;\n -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;\n box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;"
+		},
+		{
+			"id": "L84",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;\n -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;\n box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;"
+		},
+		{
+			"id": "L85",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;\n -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;\n box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;"
+		},
+		{
+			"id": "L86",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;\n -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;\n box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;"
+		},
+		{
+			"id": "L87",
+			"shadow": "-webkit-box-shadow: 15px 51px 45px -35px rgba(0, 0, 0, 0.2);\n -moz-box-shadow: 15px 51px 45px -35px rgba(0, 0, 0, 0.2);\n box-shadow: 15px 51px 45px -35px rgba(0, 0, 0, 0.2);"
+		},
+		{
+			"id": "L88",
+			"shadow": "-webkit-box-shadow: 7px 7px 15px #bbcfda,-4px -4px 13px #fff, inset 4px 4px 8px rgba(209, 217, 230, 0.2),  inset -8px -8px 8px rgba(255, 255, 255, 0.2);  \n -moz-box-shadow: 7px 7px 15px #bbcfda,-4px -4px 13px #fff, inset 4px 4px 8px rgba(209, 217, 230, 0.2),  inset -8px -8px 8px rgba(255, 255, 255, 0.2);  \n box-shadow: 7px 7px 15px #bbcfda,-4px -4px 13px #fff, inset 4px 4px 8px rgba(209, 217, 230, 0.2),  inset -8px -8px 8px rgba(255, 255, 255, 0.2);"
+		},
+		{
+			"id": "L89",
+			"shadow": "-webkit-box-shadow: 0px 4px 6px 0px rgba(50,50,93,0.11) , 0px 1px 3px 0px rgba(0,0,0,0.08);\n -moz-box-shadow: 0px 4px 6px 0px rgba(50,50,93,0.11) , 0px 1px 3px 0px rgba(0,0,0,0.08);\n box-shadow: 0px 4px 6px 0px rgba(50,50,93,0.11) , 0px 1px 3px 0px rgba(0,0,0,0.08);"
+		},
+		{
+			"id": "L90",
+			"shadow": "-webkit-box-shadow: 0px 13px 27px -5px rgba(50,50,93,0.25) , 0px 8px 16px -8px rgba(0,0,0,0.3) , 0px -6px 16px -6px rgba(0,0,0,0.025);\n -moz-box-shadow: 0px 13px 27px -5px rgba(50,50,93,0.25) , 0px 8px 16px -8px rgba(0,0,0,0.3) , 0px -6px 16px -6px rgba(0,0,0,0.025);\n box-shadow: 0px 13px 27px -5px rgba(50,50,93,0.25) , 0px 8px 16px -8px rgba(0,0,0,0.3) , 0px -6px 16px -6px rgba(0,0,0,0.025);"
+		},
+		{
+			"id": "L91",
+			"shadow": "-webkit-box-shadow: 0px 1px 0px 0px rgba(9,30,66,.25);\n -moz-box-shadow: 0px 1px 0px 0px rgba(9,30,66,.25);\n box-shadow: 0px 1px 0px 0px rgba(9,30,66,.25);"
+		},
+
+		{
+			"id": "L92",
+			"shadow": "-webkit-box-shadow: 6px 2px 16px 0px rgba(136, 165, 191, 0.48) , -6px -2px 16px 0px rgba(255, 255, 255, 0.8);\n -moz-box-shadow: 6px 2px 16px 0px rgba(136, 165, 191, 0.48) , -6px -2px 16px 0px rgba(255, 255, 255, 0.8);\n box-shadow: 6px 2px 16px 0px rgba(136, 165, 191, 0.48) , -6px -2px 16px 0px rgba(255, 255, 255, 0.8);"
+		},
+
+		{
+			"id": "L93",
+			"shadow": "-webkit-box-shadow: 0 3px 1px -2px rgb(0 0 0 / 16%), 0 2px 2px 0 rgb(0 0 0 / 11%), 0 1px 5px 0 rgb(0 0 0 / 10%);\n -moz-box-shadow: 0 3px 1px -2px rgb(0 0 0 / 16%), 0 2px 2px 0 rgb(0 0 0 / 11%), 0 1px 5px 0 rgb(0 0 0 / 10%);\n box-shadow: 0 3px 1px -2px rgb(0 0 0 / 16%), 0 2px 2px 0 rgb(0 0 0 / 11%), 0 1px 5px 0 rgb(0 0 0 / 10%);"
+		},
+		{
+			"id": "L94",
+			"shadow": "-webkit-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);\n -moz-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);\n box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);"
+		},
+		{
+			"id": "L95",
+			"shadow": "-webkit-box-shadow: 0 5px 5px -3px rgb(0 0 0 / 16%), 0 8px 10px 1px rgb(0 0 0 / 11%), 0 3px 14px 2px rgb(0 0 0 / 10%);\n -moz-box-shadow: 0 5px 5px -3px rgb(0 0 0 / 16%), 0 8px 10px 1px rgb(0 0 0 / 11%), 0 3px 14px 2px rgb(0 0 0 / 10%);\n box-shadow: 0 5px 5px -3px rgb(0 0 0 / 16%), 0 8px 10px 1px rgb(0 0 0 / 11%), 0 3px 14px 2px rgb(0 0 0 / 10%);"
+		}
+	],
+	[
+		{
+			"id": "D1",
+			"shadow": "-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35); \n -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35); \n box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);"
+		},
+		{
+			"id": "D2",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;\n -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;\n box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"
+		},
+		{
+			"id": "D3",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
+		},
+		{
+			"id": "D4",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
+		},
+		{
+			"id": "D5",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;"
+		},
+		{
+			"id": "D6",
+			"shadow": "-webkit-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;\n -moz-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;\n box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;"
+		},
+		{
+			"id": "D7",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
+		},
+		{
+			"id": "D8",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;\n -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;\n box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;"
+		},
+		{
+			"id": "D9",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;\n -moz-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;\n box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;"
+		},
+		{
+			"id": "D10",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;\n -moz-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;\n box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;"
+		},
+		{
+			"id": "D11",
+			"shadow": "-webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;\n -moz-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;\n box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;"
+		},
+		{
+			"id": "D12",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;\n -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;\n box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;"
+		},
+		{
+			"id": "D13",
+			"shadow": "-webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;\n -moz-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;\n box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;"
+		},
+		{
+			"id": "D14",
+			"shadow": "-webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;\n -moz-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;\n box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;"
+		},
+		{
+			"id": "D15",
+			"shadow": "-webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;\n -moz-box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;\n box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;"
+		},
+
+		{
+			"id": "D16",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;\n -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;\n box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;"
+		},
+		{
+			"id": "D17",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;\n -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;\n box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;"
+		},
+		{
+			"id": "D18",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;\n -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;\n box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;"
+		},
+		{
+			"id": "D19",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;\n -moz-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;\n box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;"
+		},
+		{
+			"id": "D20",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;\n -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;\n box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;"
+		},
+		{
+			"id": "D21",
+			"shadow": "-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);\n -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);\n box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"
+		},
+		{
+			"id": "D22",
+			"shadow": "-webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"
+		},
+		{
+			"id": "D23",
+			"shadow": "-webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);\n -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);\n box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);"
+		},
+		{
+			"id": "D24",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;\n -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;\n box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;"
+		},
+		{
+			"id": "D25",
+			"shadow": "-webkit-box-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%), 0 4.8px 14.4px 0 rgb(0 0 0 / 18%);\n -moz-box-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%), 0 4.8px 14.4px 0 rgb(0 0 0 / 18%);\n box-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%), 0 4.8px 14.4px 0 rgb(0 0 0 / 18%);"
+		},
+		{
+			"id": "D26",
+			"shadow": "-webkit-box-shadow: 0 8px 10px -5px rgb(0 0 0 / 16%), 0 16px 24px 2px rgb(0 0 0 / 11%), 0 6px 30px 5px rgb(0 0 0 / 10%);\n -moz-box-shadow: 0 8px 10px -5px rgb(0 0 0 / 16%), 0 16px 24px 2px rgb(0 0 0 / 11%), 0 6px 30px 5px rgb(0 0 0 / 10%);\n box-shadow: 0 8px 10px -5px rgb(0 0 0 / 16%), 0 16px 24px 2px rgb(0 0 0 / 11%), 0 6px 30px 5px rgb(0 0 0 / 10%);"
+		},
+		{
+			"id": "D27",
+			"shadow": "-webkit-box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);\n -moz-box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);\n box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);"
+		}
+	],
+	[
+		{
+			"id": "I1",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;"
+		},
+		{
+			"id": "I2",
+			"shadow": "-webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;\n -moz-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;\n box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
+		},
+		{
+			"id": "I3",
+			"shadow": "-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;\n -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;\n box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;"
+		},
+		{
+			"id": "I4",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n -moz-box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;"
+		},
+		{
+			"id": "I5",
+			"shadow": "-webkit-box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;\n -moz-box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;\n box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;"
+		},
+		{
+			"id": "I6",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;\n -moz-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;\n box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;"
+		},
+		{
+			"id": "I7",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;\n -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;\n box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;"
+		},
+		{
+			"id": "I8",
+			"shadow": "-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;"
+		},
+		{
+			"id": "I9",
+			"shadow": "-webkit-box-shadow: 3px 3px 6px 0px #CCDBE8 inset, -3px -3px 6px 1px rgba(255,255,255,0.5) inset;\n -moz-box-shadow: 3px 3px 6px 0px #CCDBE8 inset, -3px -3px 6px 1px rgba(255,255,255,0.5) inset;\n box-shadow: 3px 3px 6px 0px #CCDBE8 inset, -3px -3px 6px 1px rgba(255,255,255,0.5) inset;"
+		}
+	],
+	[
+		{
+			"id": "C1",
+			"shadow": "-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35); \n -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35); \n box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);"
+		},
+		{
+			"id": "C2",
+			"shadow": "-webkit-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;\n -moz-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;\n box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;"
+		},
+		{
+			"id": "C3",
+			"shadow": "-webkit-box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;\n -moz-box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;\n box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;"
+		},
+		{
+			"id": "C4",
+			"shadow": "-webkit-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;\n -moz-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;\n box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;"
+		},
+		{
+			"id": "C5",
+			"shadow": "-webkit-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;\n -moz-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;\n box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;"
+		},
+		{
+			"id": "C6",
+			"shadow": "-webkit-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;\n -moz-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;\n box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;"
+		},
+		{
+			"id": "C7",
+			"shadow": "-webkit-box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;\n -moz-box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;\n box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;"
+		},
+		{
+			"id": "C8",
+			"shadow": "-webkit-box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;\n -moz-box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;\n box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;"
+		},
+		{
+			"id": "C9",
+			"shadow": "-webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;\n -moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;\n box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;"
+		},
+		{
+			"id": "C10",
+			"shadow": "-webkit-box-shadow: -10px -8px 0px rgb(167 243 208);\n -moz-box-shadow: -10px -8px 0px rgb(167 243 208);\n box-shadow: -10px -8px 0px rgb(167 243 208);"
+		},
+		{
+			"id": "C11",
+			"shadow": "-webkit-box-shadow: 10px -8px 0px rgb(253 230 138);\n -moz-box-shadow: 10px -8px 0px rgb(253 230 138);\n box-shadow: 10px -8px 0px rgb(253 230 138);"
+		},
+		{
+			"id": "C12",
+			"shadow": "-webkit-box-shadow: 10px 8px 0px rgb(191 219 254);\n -moz-box-shadow: 10px 8px 0px rgb(191 219 254);\n box-shadow: 10px 8px 0px rgb(191 219 254);"
+		},
+		{
+			"id": "C13",
+			"shadow": "-webkit-box-shadow: -10px 8px 0px rgb(196 181 253);\n -moz-box-shadow: -10px 8px 0px rgb(196 181 253);\n box-shadow: -10px 8px 0px rgb(196 181 253);"
+		},
+		{
+			"id": "C14",
+			"shadow": "-webkit-box-shadow: 3px 4px 0px 0px #4e57ef;\n -moz-box-shadow: 3px 4px 0px 0px #4e57ef;\n box-shadow: 3px 4px 0px 0px #4e57ef;"
+		}
+	]
+]
