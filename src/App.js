@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { CssBaseline, StyledEngineProvider } from "@mui/material";
+import { CssBaseline, StyledEngineProvider, Toolbar } from "@mui/material";
 
 import Home from "./pages/home/Home";
 import Resources from "./pages/resources/Resources";
@@ -9,14 +9,16 @@ import Entities from "./pages/entities/Entities";
 import Learn from "./pages/learn/Learn";
 import Navbar from "./layout/navbar/Navbar";
 import Footer from "./layout/footer/Footer";
+import BackToTop from "./components/backToTop/BackToTop";
 
 function App() {
 	return (
 		<>
 			<StyledEngineProvider injectFirst>
 				<CssBaseline />
+				<Toolbar id='back-to-top-anchor' />
 				<Navbar />
-				<main style={{ marginTop: "50px" }}>
+				<main>
 					<Routes>
 						<Route path='/' element={<Home />} />
 						<Route path='/resources' element={<Resources />} />
@@ -26,6 +28,7 @@ function App() {
 					</Routes>
 				</main>
 				<Footer />
+				<BackToTop />
 			</StyledEngineProvider>
 		</>
 	);
