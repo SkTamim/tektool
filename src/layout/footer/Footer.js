@@ -66,7 +66,7 @@ export const Footer = () => {
 						className={classes.gridItem}
 						xs={12}
 						sm={6}
-						md={4}
+						md={3}
 						sx={{ px: 3 }}
 					>
 						<Logo color='blue' style={{ height: "80px" }} />
@@ -137,7 +137,7 @@ export const Footer = () => {
 						className={classes.gridItem}
 						xs={12}
 						sm={6}
-						md={4}
+						md={3}
 						sx={{
 							px: 3,
 						}}
@@ -163,7 +163,49 @@ export const Footer = () => {
 						className={classes.gridItem}
 						xs={12}
 						sm={6}
-						md={4}
+						md={3}
+						sx={{ px: 3 }}
+					>
+						<h4 className={classes.footerHeading}>Cradit</h4>
+						<ul style={{ listStyle: "inside" }}>
+							<li>
+								<Link
+									underline='hover'
+									color='inherit'
+									href='https://storyset.com/'
+									target='_blank'
+								>
+									SVGs by storyset
+								</Link>
+							</li>
+							<li>
+								Box shadows by <br />
+								<Link
+									underline='hover'
+									color='inherit'
+									href='https://getcssscan.com/css-box-shadow-examples'
+									target='_blank'
+								>
+									css scan
+								</Link>
+								&nbsp; and &nbsp;
+								<Link
+									underline='hover'
+									color='inherit'
+									href='https://copy-paste-css.com/box-shadows'
+									target='_blank'
+								>
+									copy paste css
+								</Link>
+							</li>
+						</ul>
+					</Grid>
+					<Grid
+						item
+						className={classes.gridItem}
+						xs={12}
+						sm={6}
+						md={3}
 						sx={{ px: 3 }}
 					>
 						<h4 className={classes.footerHeading}>Contribute</h4>
