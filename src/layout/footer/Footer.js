@@ -166,7 +166,7 @@ export const Footer = () => {
 						md={3}
 						sx={{ px: 3 }}
 					>
-						<h4 className={classes.footerHeading}>Cradit</h4>
+						<h4 className={classes.footerHeading}>Credit</h4>
 						<ul style={{ listStyle: "inside" }}>
 							<li>
 								<Link
