@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		margin: "0 1rem",
+		margin: ".5rem 1rem",
 		backgroundColor: theme.palette.secondary.text,
 		border: `1px solid ${theme.palette.secondary.dark}`,
 		color: theme.palette.secondary.dark,
