@@ -1,29 +1,20 @@
-import { makeStyles } from "@mui/styles";
 import React from "react";
 import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
 import BoxShadowComponent from "./BoxShadowComponent";
-
-const useStyles = makeStyles({
-	mainHeading: {
-		position: "absolute",
-		left: "50%",
-		transform: "translateX(-50%)",
-		width: "max-content",
-	},
-});
+import ShadowTypeNavigator from "./ShadowTypeNavigator";
 
 const BoxShadows = () => {
-	const classes = useStyles();
 	return (
 		<>
-			<HeadingSecondary className={classes.mainHeading}>
-				Box Shadows
-			</HeadingSecondary>
+			<div style={{ textAlign: "center", padding: "1rem 0" }}>
+				<HeadingSecondary>Box Shadows</HeadingSecondary>
+			</div>
+			<ShadowTypeNavigator />
 
-			<BoxShadowComponent shadowType='Light' />
-			<BoxShadowComponent shadowType='Dark' />
-			<BoxShadowComponent shadowType='Inset' />
-			<BoxShadowComponent shadowType='Colored' />
+			<BoxShadowComponent shadowType='Light' shadowId='light-shadows' />
+			<BoxShadowComponent shadowType='Dark' shadowId='dark-shadows' />
+			<BoxShadowComponent shadowType='Inset' shadowId='inset-shadows' />
+			<BoxShadowComponent shadowType='Colored' shadowId='colored-shadows' />
 		</>
 	);
 };

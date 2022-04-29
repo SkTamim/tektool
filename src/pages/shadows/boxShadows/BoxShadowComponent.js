@@ -71,7 +71,7 @@ const BoxShadowComponent = (props) => {
 	}, []);
 
 	return (
-		<div className={classes.root}>
+		<div className={classes.root} id={props.shadowId}>
 			<h4 className={classes.subHeading}>{props.shadowType} Shadows</h4>
 
 			<Grid container gap={8} justifyContent='center' py={4}>
