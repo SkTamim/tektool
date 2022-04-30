@@ -4,10 +4,11 @@ import { Grid } from "@mui/material";
 import Paragraph from "../../../components/UI/typography/Paragraph";
 import LoadingScreen from "../LoadingScreen";
 import TextShadowBox from "./TextShadowBox";
+import InfoIcon from "@mui/icons-material/Info";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		padding: "5rem 0",
+		padding: "1rem 0",
 	},
 	subHeading: {
 		fontSize: "1.5rem",
@@ -21,6 +22,15 @@ const useStyles = makeStyles((theme) => ({
 	},
 	errorMessage: {
 		color: theme.palette.spacial.error,
+	},
+	copyInfo: {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "center",
+		backgroundColor: "#f0f8ff",
+		padding: ".5rem",
+		flexWrap: "wrap",
+		textAlign: "center",
 	},
 }));
 
@@ -67,6 +77,12 @@ const TextShadowComponent = () => {
 	return (
 		<>
 			<section className={classes.root}>
+				<div className={classes.copyInfo}>
+					<InfoIcon />
+					<Paragraph sx={{ px: 1 }}>
+						Click on any box to copy the Shadow
+					</Paragraph>
+				</div>
 				<Grid container gap={8} justifyContent='center' py={4}>
 					{state.loading && <LoadingScreen />}
 					{state.data &&

@@ -3,23 +3,15 @@ import { makeStyles } from "@mui/styles";
 import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
 import TextShadowComponent from "./TextShadowComponent";
 
-const useStyles = makeStyles({
-	mainHeading: {
-		position: "absolute",
-		left: "50%",
-		transform: "translateX(-50%)",
-		width: "max-content",
-		padding: "2rem 0",
-	},
-});
+const useStyles = makeStyles({});
 
 const TextShadows = () => {
 	const classes = useStyles();
 	return (
 		<>
-			<HeadingSecondary className={classes.mainHeading}>
-				Text Shadows
-			</HeadingSecondary>
+			<div style={{ textAlign: "center", padding: "1rem 0" }}>
+				<HeadingSecondary>Text Shadows</HeadingSecondary>
+			</div>
 
 			<TextShadowComponent />
 		</>
