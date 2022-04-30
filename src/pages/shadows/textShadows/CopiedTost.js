@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack, Snackbar, Alert } from "@mui/material";
 
-export default function CopiedTost(props) {
+const CopiedTost = (props) => {
 	const handleClose = (event, reason) => {
 		if (reason === "clickaway") {
 			return;
@@ -23,4 +23,5 @@ export default function CopiedTost(props) {
 			</Snackbar>
 		</Stack>
 	);
-}
+};
+export default CopiedTost;
