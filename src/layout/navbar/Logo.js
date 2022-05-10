@@ -3,9 +3,9 @@ import { Box } from "@mui/system";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import logoBlack from "../../assets/images/Black Logo.svg";
-import logoBlue from "../../assets/images/Blue Logo.svg";
-import logoGreen from "../../assets/images/Green Logo.svg";
+import logoBlack from "../../assets/images/Logo/Black Logo.svg";
+import logoBlue from "../../assets/images/Logo/Blue Logo.svg";
+import logoGreen from "../../assets/images/Logo/Green Logo.svg";
 
 const useStyles = makeStyles(() => ({
 	imageStyle: { height: "50px" },
