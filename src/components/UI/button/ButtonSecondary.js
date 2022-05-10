@@ -21,6 +21,7 @@ const ButtonSecondary = (props) => {
 			sx={props.sx}
 			component={props.component}
 			to={props.to}
+			type={props.type}
 		>
 			{props.children}
 		</Button>
