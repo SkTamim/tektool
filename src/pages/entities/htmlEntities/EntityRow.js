@@ -1,5 +1,5 @@
+import React, { useState } from "react";
 import { makeStyles } from "@mui/styles";
-import React from "react";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -17,18 +17,37 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const EntityRow = (props) => {
+	const { character, entity, hex, css, unicode, name } = props.data;
 	const classes = useStyles();
+
+	const copyTextHandler = (copyData) => {
+		navigator.clipboard.writeText(copyData);
+		props.copyTostHandler(true);
+	};
+
 	return (
-		<tr className={classes.root}>
-			<td className={classes.text}>{props.data.character}</td>
-			<td className={classes.text}>{props.data.entity}</td>
-			<td className={classes.text}>{props.data.hex}</td>
-			<td className={classes.text}>{props.data.css}</td>
-			<td className={classes.text}>{props.data.unicode}</td>
-			<td className={classes.text} style={{ maxWidth: "200px" }}>
-				{props.data.name}
-			</td>
-		</tr>
+		<>
+			<tr className={classes.root}>
+				<td onClick={() => copyTextHandler(character)} className={classes.text}>
+					{character}
+				</td>
+				<td onClick={() => copyTextHandler(entity)} className={classes.text}>
+					{entity}
+				</td>
+				<td onClick={() => copyTextHandler(hex)} className={classes.text}>
+					{hex}
+				</td>
+				<td onClick={() => copyTextHandler(css)} className={classes.text}>
+					{css}
+				</td>
+				<td onClick={() => copyTextHandler(unicode)} className={classes.text}>
+					{unicode}
+				</td>
+				<td className={classes.text} style={{ maxWidth: "200px" }}>
+					{name}
+				</td>
+			</tr>
+		</>
 	);
 };
 

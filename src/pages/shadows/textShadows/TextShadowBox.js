@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import CopiedTost from "./CopiedTost";
+import CopiedTost from "../../../components/tosts/CopiedTost";
 
 const BoxWithStyle = styled.div((props) => {
 	return `width:200px;
