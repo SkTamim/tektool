@@ -7,7 +7,7 @@ import LoadingScreen from "../LoadingScreen";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		paddingTop: "4rem",
+		paddingTop: "2rem",
 	},
 	subHeading: {
 		fontSize: "1.5rem",

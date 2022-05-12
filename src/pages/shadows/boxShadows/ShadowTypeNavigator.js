@@ -5,8 +5,6 @@ import MyChip from "../../../components/UI/chip/MyChip";
 const useStyles = makeStyles({
 	root: {
 		padding: "1rem 0",
-		borderTop: "1px solid #342C49",
-		borderBottom: "1px solid #342C49",
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
