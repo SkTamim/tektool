@@ -9,9 +9,14 @@ const useStyles = makeStyles((theme) => ({
 		padding: ".8rem",
 		textAlign: "center",
 		color: theme.palette.secondary.dark,
+		transition: ".1s",
 		"&:first-child": {
 			fontWeight: "bold",
 			fontSize: "1.5rem",
+		},
+		"&:hover": {
+			boxShadow: "rgb(0 0 0 / 20%) 0px 2px 4px 0px inset",
+			cursor: "pointer",
 		},
 	},
 }));

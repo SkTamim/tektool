@@ -83,22 +83,24 @@ const HtmlEntityComponent = (props) => {
 
 			{error && <p className={classes.error}>{error}</p>}
 			{mainData && (
-				<table className={classes.list}>
-					<thead>
-						<EntityRowHeading />
-					</thead>
-					<tbody>
-						{mainData.map((element, index) => {
-							return (
-								<EntityRow
-									copyTostHandler={copyTostHandler}
-									data={element}
-									key={element.name + index}
-								/>
-							);
-						})}
-					</tbody>
-				</table>
+				<div style={{ overflowX: "scroll" }}>
+					<table className={classes.list}>
+						<thead>
+							<EntityRowHeading />
+						</thead>
+						<tbody>
+							{mainData.map((element, index) => {
+								return (
+									<EntityRow
+										copyTostHandler={copyTostHandler}
+										data={element}
+										key={element.name + index}
+									/>
+								);
+							})}
+						</tbody>
+					</table>
+				</div>
 			)}
 			<CopiedTost open={open} setOpen={setOpen} />
 		</div>
