@@ -10,6 +10,8 @@ import Learn from "./pages/learn/Learn";
 import Navbar from "./layout/navbar/Navbar";
 import Footer from "./layout/footer/Footer";
 import BackToTop from "./components/backToTop/BackToTop";
+import TextShadows from "./pages/shadows/textShadows/TextShadows";
+import BoxShadows from "./pages/shadows/boxShadows/BoxShadows";
 
 function App() {
 	return (
@@ -22,7 +24,8 @@ function App() {
 					<Routes>
 						<Route path='/' element={<Home />} />
 						<Route path='/resources' element={<Resources />} />
-						<Route path='/shadows' element={<Shadows />} />
+						<Route path='/box-shadows' element={<BoxShadows />} />
+						<Route path='/text-shadows' element={<TextShadows />} />
 						<Route path='/entities' element={<Entities />} />
 						<Route path='/learn' element={<Learn />} />
 					</Routes>

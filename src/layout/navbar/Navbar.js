@@ -73,8 +73,8 @@ const Navbar = () => {
 			>
 				<Box
 					role='presentation'
-					onClick={toggleDrawer(false)}
-					onKeyDown={toggleDrawer(false)}
+					onClick={toggleDrawer(true)}
+					onKeyDown={toggleDrawer(true)}
 					sx={{ px: 3 }}
 				>
 					<MobilePages />

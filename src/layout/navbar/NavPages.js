@@ -1,15 +1,23 @@
-import { Button, Divider } from "@mui/material";
+import { Button, Divider, Menu, MenuItem } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
+
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const useStyles = makeStyles((theme) => ({
 	desktopLinks: {
 		color: theme.palette.darkBg.text,
 		fontWeight: 400,
 		"&.active": {
+			backgroundColor: theme.palette.darkBg.bg,
+			color: theme.palette.darkBg.text,
+		},
+	},
+	dropdown: {
+		"&.active ": {
 			backgroundColor: theme.palette.darkBg.bg,
 			color: theme.palette.darkBg.text,
 		},
@@ -28,6 +36,25 @@ const useStyles = makeStyles((theme) => ({
 
 export const DesktopPages = () => {
 	const classes = useStyles();
+	const [isShadowActive, setIsShadowActive] = useState(false);
+
+	const [shadowsButton, setShadowsButton] = useState(null);
+	const open = Boolean(shadowsButton);
+	const handleShadowsButton = (event) => {
+		setShadowsButton(event.currentTarget);
+	};
+	const handleShadowsButtonClose = (e) => {
+		setShadowsButton(null);
+	};
+
+	useEffect(() => {
+		const url = window.location.href.toString();
+		if (url.includes("box-shadows") || url.includes("text-shadows")) {
+			setIsShadowActive(true);
+		} else {
+			setIsShadowActive(false);
+		}
+	}, [shadowsButton]);
 
 	const home = (
 		<Button
@@ -36,6 +63,7 @@ export const DesktopPages = () => {
 			component={NavLink}
 			to='/'
 			key='home'
+			onClick={() => setIsShadowActive(false)}
 		>
 			Home
 		</Button>
@@ -47,20 +75,52 @@ export const DesktopPages = () => {
 			component={NavLink}
 			to='/resources'
 			key='resources'
+			onClick={() => setIsShadowActive(false)}
 		>
 			Resources
 		</Button>
 	);
 	const shadows = (
-		<Button
-			sx={{ m: 1 }}
-			className={classes.desktopLinks}
-			component={NavLink}
-			to='/shadows'
-			key='shadows'
-		>
-			Shadows
-		</Button>
+		<div key='shadows'>
+			<Button
+				sx={{ m: 1 }}
+				className={`${classes.desktopLinks} ${isShadowActive ? "active" : ""}`}
+				id='basic-button'
+				aria-controls={open ? "basic-menu" : undefined}
+				aria-haspopup='true'
+				aria-expanded={open ? "true" : undefined}
+				onClick={handleShadowsButton}
+			>
+				Shadows
+				<KeyboardArrowDownIcon />
+			</Button>
+			<Menu
+				id='basic-menu'
+				anchorEl={shadowsButton}
+				open={open}
+				onClose={handleShadowsButtonClose}
+				MenuListProps={{
+					"aria-labelledby": "basic-button",
+				}}
+			>
+				<MenuItem
+					className={classes.dropdown}
+					onClick={handleShadowsButtonClose}
+					to='/box-shadows'
+					component={NavLink}
+				>
+					Box Shadows
+				</MenuItem>
+				<MenuItem
+					className={classes.dropdown}
+					onClick={handleShadowsButtonClose}
+					to='/text-shadows'
+					component={NavLink}
+				>
+					Text Shadows
+				</MenuItem>
+			</Menu>
+		</div>
 	);
 	const entities = (
 		<Button
@@ -69,6 +129,7 @@ export const DesktopPages = () => {
 			component={NavLink}
 			to='/entities'
 			key='entities'
+			onClick={() => setIsShadowActive(false)}
 		>
 			Entities
 		</Button>
@@ -80,6 +141,7 @@ export const DesktopPages = () => {
 			component={NavLink}
 			to='/learn'
 			key='learn'
+			onClick={() => setIsShadowActive(false)}
 		>
 			Learn
 		</Button>
@@ -102,6 +164,26 @@ export const DesktopPages = () => {
 export const MobilePages = () => {
 	const classes = useStyles();
 
+	const [isShadowActive, setIsShadowActive] = useState(false);
+
+	const [shadowsButton, setShadowsButton] = useState(null);
+	const open = Boolean(shadowsButton);
+	const handleShadowsButton = (event) => {
+		setShadowsButton(event.currentTarget);
+	};
+	const handleShadowsButtonClose = (e) => {
+		setShadowsButton(null);
+	};
+
+	useEffect(() => {
+		const url = window.location.href.toString();
+		if (url.includes("box-shadows") || url.includes("text-shadows")) {
+			setIsShadowActive(true);
+		} else {
+			setIsShadowActive(false);
+		}
+	}, [shadowsButton]);
+
 	const home = (
 		<Button
 			sx={{ m: 1, display: "block" }}
@@ -109,6 +191,7 @@ export const MobilePages = () => {
 			component={NavLink}
 			to='/'
 			key='home'
+			onClick={() => setIsShadowActive(false)}
 		>
 			Home
 		</Button>
@@ -120,20 +203,52 @@ export const MobilePages = () => {
 			component={NavLink}
 			to='/resources'
 			key='resources'
+			onClick={() => setIsShadowActive(false)}
 		>
 			Resources
 		</Button>
 	);
 	const shadows = (
-		<Button
-			sx={{ m: 1, display: "block" }}
-			className={classes.mobileLinks}
-			component={NavLink}
-			to='/shadows'
-			key='shadows'
-		>
-			Shadows
-		</Button>
+		<div key='shadows'>
+			<Button
+				sx={{ m: 1, display: "flex" }}
+				className={`${classes.mobileLinks} ${isShadowActive ? "active" : ""}`}
+				id='basic-button'
+				aria-controls={open ? "basic-menu" : undefined}
+				aria-haspopup='true'
+				aria-expanded={open ? "true" : undefined}
+				onClick={handleShadowsButton}
+			>
+				Shadows
+				<KeyboardArrowDownIcon />
+			</Button>
+			<Menu
+				id='basic-menu'
+				anchorEl={shadowsButton}
+				open={open}
+				onClose={handleShadowsButtonClose}
+				MenuListProps={{
+					"aria-labelledby": "basic-button",
+				}}
+			>
+				<MenuItem
+					className={classes.dropdown}
+					onClick={handleShadowsButtonClose}
+					to='/box-shadows'
+					component={NavLink}
+				>
+					Box Shadows
+				</MenuItem>
+				<MenuItem
+					className={classes.dropdown}
+					onClick={handleShadowsButtonClose}
+					to='/text-shadows'
+					component={NavLink}
+				>
+					Text Shadows
+				</MenuItem>
+			</Menu>
+		</div>
 	);
 	const entities = (
 		<Button
@@ -142,6 +257,7 @@ export const MobilePages = () => {
 			component={NavLink}
 			to='/html-entities'
 			key='entities'
+			onClick={() => setIsShadowActive(false)}
 		>
 			Entities
 		</Button>
@@ -153,6 +269,7 @@ export const MobilePages = () => {
 			component={NavLink}
 			to='/learn'
 			key='learn'
+			onClick={() => setIsShadowActive(false)}
 		>
 			Learn
 		</Button>
