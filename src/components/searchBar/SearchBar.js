@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import ButtonSecondary from "../UI/button/ButtonSecondary";
 import { makeStyles } from "@mui/styles";
-import { Alert, Snackbar, Stack, TextField } from "@mui/material";
+import { Alert, Container, Snackbar, Stack, TextField } from "@mui/material";
 
 const useStyles = makeStyles({
 	root: {
@@ -40,7 +40,7 @@ const SearchBar = (props) => {
 	};
 	const searchValueRef = useRef();
 	return (
-		<>
+		<Container>
 			<form className={classes.root} onSubmit={handleSearch}>
 				<input
 					placeholder='Search here'
@@ -62,7 +62,7 @@ const SearchBar = (props) => {
 					</Alert>
 				</Snackbar>
 			</Stack>
-		</>
+		</Container>
 	);
 };
 
