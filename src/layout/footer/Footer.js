@@ -50,12 +50,14 @@ const useStyle = makeStyles((theme) => ({
 const sitemaps = [
 	{ text: "Home", to: "/" },
 	{ text: "Resources", to: "/resources" },
-	{ text: "Shadows", to: "/shadows" },
-	{ text: "Entities", to: "/entities" },
+	{ text: "Box Shadows", to: "/box-shadows" },
+	{ text: "Text Shadows", to: "/text-shadows" },
+	{ text: "HTML Entities", to: "/html-entities" },
+	{ text: "Emoji Entities", to: "/emoji-entities" },
 	{ text: "Learn", to: "/learn" },
 ];
 
-export const Footer = () => {
+export const Footer = ({ handleNavActive }) => {
 	const classes = useStyle();
 	return (
 		<footer className={classes.root}>
@@ -151,6 +153,7 @@ export const Footer = () => {
 										color='inherit'
 										component={NavLink}
 										to={sitemap.to}
+										onClick={() => handleNavActive()}
 									>
 										{sitemap.text}
 									</Link>
@@ -176,26 +179,6 @@ export const Footer = () => {
 									target='_blank'
 								>
 									SVGs by storyset
-								</Link>
-							</li>
-							<li>
-								Box shadows by <br />
-								<Link
-									underline='hover'
-									color='inherit'
-									href='https://getcssscan.com/css-box-shadow-examples'
-									target='_blank'
-								>
-									css scan
-								</Link>
-								&nbsp; and &nbsp;
-								<Link
-									underline='hover'
-									color='inherit'
-									href='https://copy-paste-css.com/box-shadows'
-									target='_blank'
-								>
-									copy paste css
 								</Link>
 							</li>
 						</ul>

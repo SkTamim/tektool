@@ -12,7 +12,7 @@ import HideAppBar from "./HideOnScroll";
 import { DesktopPages, MobilePages } from "./NavPages";
 import Logo from "./Logo";
 
-const Navbar = () => {
+const Navbar = ({ navActive }) => {
 	// Drawer State & Function
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 	const toggleDrawer = (open) => (event) => {
@@ -59,7 +59,7 @@ const Navbar = () => {
 							}}
 						/>
 
-						<DesktopPages />
+						<DesktopPages navActive={navActive} />
 					</Container>
 				</Toolbar>
 			</HideAppBar>
@@ -77,7 +77,7 @@ const Navbar = () => {
 					onKeyDown={toggleDrawer(true)}
 					sx={{ px: 3 }}
 				>
-					<MobilePages />
+					<MobilePages navActive={navActive} />
 				</Box>
 			</SwipeableDrawer>
 		</>

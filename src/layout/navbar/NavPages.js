@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export const DesktopPages = () => {
+export const DesktopPages = ({ navActive }) => {
 	const classes = useStyles();
 	const [isShadowActive, setIsShadowActive] = useState(false);
 	const [isEntityActive, setIsEntityActive] = useState(false);
@@ -66,7 +66,7 @@ export const DesktopPages = () => {
 		} else {
 			setIsShadowActive(false);
 		}
-	}, [shadowsButton]);
+	}, [shadowsButton, navActive]);
 
 	useEffect(() => {
 		const url = window.location.href.toString();
@@ -75,7 +75,7 @@ export const DesktopPages = () => {
 		} else {
 			setIsEntityActive(false);
 		}
-	}, [entitiesButton]);
+	}, [entitiesButton, navActive]);
 
 	const home = (
 		<Button
@@ -222,7 +222,7 @@ export const DesktopPages = () => {
 	);
 };
 
-export const MobilePages = () => {
+export const MobilePages = ({ navActive }) => {
 	const classes = useStyles();
 
 	const [isShadowActive, setIsShadowActive] = useState(false);
@@ -255,7 +255,7 @@ export const MobilePages = () => {
 		} else {
 			setIsShadowActive(false);
 		}
-	}, [shadowsButton]);
+	}, [shadowsButton, navActive]);
 
 	useEffect(() => {
 		const url = window.location.href.toString();
@@ -264,7 +264,7 @@ export const MobilePages = () => {
 		} else {
 			setIsEntityActive(false);
 		}
-	}, [entitiesButton]);
+	}, [entitiesButton, navActive]);
 
 	const home = (
 		<Button

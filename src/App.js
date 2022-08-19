@@ -14,14 +14,20 @@ import TextShadows from "./pages/shadows/textShadows/TextShadows";
 import BoxShadows from "./pages/shadows/boxShadows/BoxShadows";
 import EmojiEntities from "./pages/entities/emojiEntities/EmojiEntities";
 import HtmlEntities from "./pages/entities/htmlEntities/HtmlEntities";
+import { useState } from "react";
 
 function App() {
+	const [navActive, setNavActive] = useState("");
+	const handleNavActive = () => {
+		var currentDateTime = new Date();
+		setNavActive(currentDateTime.getTime());
+	};
 	return (
 		<>
 			<StyledEngineProvider injectFirst>
 				<CssBaseline />
 				<Toolbar id='back-to-top-anchor' />
-				<Navbar />
+				<Navbar navActive={navActive} />
 				<main>
 					<Routes>
 						<Route path='/' element={<Home />} />
@@ -33,7 +39,7 @@ function App() {
 						<Route path='/learn' element={<Learn />} />
 					</Routes>
 				</main>
-				<Footer />
+				<Footer handleNavActive={handleNavActive} />
 				<BackToTop />
 			</StyledEngineProvider>
 		</>
