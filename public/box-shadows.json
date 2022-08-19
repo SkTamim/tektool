@@ -506,14 +506,17 @@
 		},
 		{
 			"id": "C3",
+			"by": "Alligator",
 			"shadow": "-webkit-box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;\n -moz-box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;\n box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;"
 		},
 		{
 			"id": "C4",
+			"by": "Alligator",
 			"shadow": "-webkit-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;\n -moz-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;\n box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;"
 		},
 		{
 			"id": "C5",
+			"by": "Alligator",
 			"shadow": "-webkit-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;\n -moz-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;\n box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;"
 		},
 		{
@@ -522,10 +525,12 @@
 		},
 		{
 			"id": "C7",
+			"by": "Fossheim",
 			"shadow": "-webkit-box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;\n -moz-box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;\n box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;"
 		},
 		{
 			"id": "C8",
+			"by": "Fossheim",
 			"shadow": "-webkit-box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;\n -moz-box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;\n box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;"
 		},
 		{
@@ -534,22 +539,27 @@
 		},
 		{
 			"id": "C10",
+			"by": "copy-paste-css",
 			"shadow": "-webkit-box-shadow: -10px -8px 0px rgb(167 243 208);\n -moz-box-shadow: -10px -8px 0px rgb(167 243 208);\n box-shadow: -10px -8px 0px rgb(167 243 208);"
 		},
 		{
 			"id": "C11",
+			"by": "copy-paste-css",
 			"shadow": "-webkit-box-shadow: 10px -8px 0px rgb(253 230 138);\n -moz-box-shadow: 10px -8px 0px rgb(253 230 138);\n box-shadow: 10px -8px 0px rgb(253 230 138);"
 		},
 		{
 			"id": "C12",
+			"by": "copy-paste-css",
 			"shadow": "-webkit-box-shadow: 10px 8px 0px rgb(191 219 254);\n -moz-box-shadow: 10px 8px 0px rgb(191 219 254);\n box-shadow: 10px 8px 0px rgb(191 219 254);"
 		},
 		{
 			"id": "C13",
+			"by": "copy-paste-css",
 			"shadow": "-webkit-box-shadow: -10px 8px 0px rgb(196 181 253);\n -moz-box-shadow: -10px 8px 0px rgb(196 181 253);\n box-shadow: -10px 8px 0px rgb(196 181 253);"
 		},
 		{
 			"id": "C14",
+			"by": "copy-paste-css",
 			"shadow": "-webkit-box-shadow: 3px 4px 0px 0px #4e57ef;\n -moz-box-shadow: 3px 4px 0px 0px #4e57ef;\n box-shadow: 3px 4px 0px 0px #4e57ef;"
 		}
 	]

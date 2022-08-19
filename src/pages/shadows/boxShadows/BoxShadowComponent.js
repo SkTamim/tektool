@@ -79,7 +79,7 @@ const BoxShadowComponent = (props) => {
 				{state.data &&
 					state.data.map((data) => (
 						<Grid item key={data.id}>
-							<ShadowBox styles={data.shadow} />
+							<ShadowBox styles={data.shadow} by={data.by} link={data.link} />
 						</Grid>
 					))}
 				{state.error && (
