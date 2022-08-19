@@ -12,6 +12,8 @@ import Footer from "./layout/footer/Footer";
 import BackToTop from "./components/backToTop/BackToTop";
 import TextShadows from "./pages/shadows/textShadows/TextShadows";
 import BoxShadows from "./pages/shadows/boxShadows/BoxShadows";
+import EmojiEntities from "./pages/entities/emojiEntities/EmojiEntities";
+import HtmlEntities from "./pages/entities/htmlEntities/HtmlEntities";
 
 function App() {
 	return (
@@ -26,7 +28,8 @@ function App() {
 						<Route path='/resources' element={<Resources />} />
 						<Route path='/box-shadows' element={<BoxShadows />} />
 						<Route path='/text-shadows' element={<TextShadows />} />
-						<Route path='/entities' element={<Entities />} />
+						<Route path='/html-entities' element={<HtmlEntities />} />
+						<Route path='/emoji-entities' element={<EmojiEntities />} />
 						<Route path='/learn' element={<Learn />} />
 					</Routes>
 				</main>

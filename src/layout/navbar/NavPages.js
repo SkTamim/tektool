@@ -37,14 +37,26 @@ const useStyles = makeStyles((theme) => ({
 export const DesktopPages = () => {
 	const classes = useStyles();
 	const [isShadowActive, setIsShadowActive] = useState(false);
+	const [isEntityActive, setIsEntityActive] = useState(false);
 
 	const [shadowsButton, setShadowsButton] = useState(null);
 	const open = Boolean(shadowsButton);
 	const handleShadowsButton = (event) => {
 		setShadowsButton(event.currentTarget);
+		setIsEntityActive(false);
 	};
 	const handleShadowsButtonClose = (e) => {
 		setShadowsButton(null);
+	};
+
+	const [entitiesButton, setEntitiesButton] = useState(null);
+	const entitiesOpen = Boolean(entitiesButton);
+	const handleEntitiesButton = (event) => {
+		setEntitiesButton(event.currentTarget);
+		setIsShadowActive(false);
+	};
+	const handleEntitiesButtonClose = (e) => {
+		setEntitiesButton(null);
 	};
 
 	useEffect(() => {
@@ -56,6 +68,15 @@ export const DesktopPages = () => {
 		}
 	}, [shadowsButton]);
 
+	useEffect(() => {
+		const url = window.location.href.toString();
+		if (url.includes("html-entities") || url.includes("emoji-entities")) {
+			setIsEntityActive(true);
+		} else {
+			setIsEntityActive(false);
+		}
+	}, [entitiesButton]);
+
 	const home = (
 		<Button
 			sx={{ m: 1 }}
@@ -63,7 +84,10 @@ export const DesktopPages = () => {
 			component={NavLink}
 			to='/'
 			key='home'
-			onClick={() => setIsShadowActive(false)}
+			onClick={() => {
+				setIsShadowActive(false);
+				setIsEntityActive(false);
+			}}
 		>
 			Home
 		</Button>
@@ -75,7 +99,10 @@ export const DesktopPages = () => {
 			component={NavLink}
 			to='/resources'
 			key='resources'
-			onClick={() => setIsShadowActive(false)}
+			onClick={() => {
+				setIsShadowActive(false);
+				setIsEntityActive(false);
+			}}
 		>
 			Resources
 		</Button>
@@ -123,16 +150,47 @@ export const DesktopPages = () => {
 		</div>
 	);
 	const entities = (
-		<Button
-			sx={{ m: 1 }}
-			className={classes.desktopLinks}
-			component={NavLink}
-			to='/entities'
-			key='entities'
-			onClick={() => setIsShadowActive(false)}
-		>
-			Entities
-		</Button>
+		<div key='entities'>
+			<Button
+				sx={{ m: 1 }}
+				onClick={handleEntitiesButton}
+				className={`${classes.desktopLinks} ${isEntityActive ? "active" : ""}`}
+				id='basic-button2'
+				aria-controls={entitiesOpen ? "basic-menu2" : undefined}
+				aria-haspopup='true'
+				aria-expanded={entitiesOpen ? "true" : undefined}
+			>
+				Entities
+				<KeyboardArrowDownIcon />
+			</Button>
+
+			<Menu
+				id='basic-menu2'
+				anchorEl={entitiesButton}
+				open={entitiesOpen}
+				onClose={handleEntitiesButtonClose}
+				MenuListProps={{
+					"aria-labelledby": "basic-button2",
+				}}
+			>
+				<MenuItem
+					className={classes.dropdown}
+					onClick={handleEntitiesButtonClose}
+					to='/html-entities'
+					component={NavLink}
+				>
+					HTML Entities
+				</MenuItem>
+				<MenuItem
+					className={classes.dropdown}
+					onClick={handleEntitiesButtonClose}
+					to='/emoji-entities'
+					component={NavLink}
+				>
+					Emoji Entities
+				</MenuItem>
+			</Menu>
+		</div>
 	);
 	const learn = (
 		<Button
@@ -141,7 +199,10 @@ export const DesktopPages = () => {
 			component={NavLink}
 			to='/learn'
 			key='learn'
-			onClick={() => setIsShadowActive(false)}
+			onClick={() => {
+				setIsShadowActive(false);
+				setIsEntityActive(false);
+			}}
 		>
 			Learn
 		</Button>
@@ -165,14 +226,26 @@ export const MobilePages = () => {
 	const classes = useStyles();
 
 	const [isShadowActive, setIsShadowActive] = useState(false);
+	const [isEntityActive, setIsEntityActive] = useState(false);
 
 	const [shadowsButton, setShadowsButton] = useState(null);
 	const open = Boolean(shadowsButton);
 	const handleShadowsButton = (event) => {
 		setShadowsButton(event.currentTarget);
+		setIsEntityActive(false);
 	};
 	const handleShadowsButtonClose = (e) => {
 		setShadowsButton(null);
+	};
+
+	const [entitiesButton, setEntitiesButton] = useState(null);
+	const entitiesOpen = Boolean(entitiesButton);
+	const handleEntitiesButton = (event) => {
+		setEntitiesButton(event.currentTarget);
+		setIsShadowActive(false);
+	};
+	const handleEntitiesButtonClose = (e) => {
+		setEntitiesButton(null);
 	};
 
 	useEffect(() => {
@@ -184,6 +257,15 @@ export const MobilePages = () => {
 		}
 	}, [shadowsButton]);
 
+	useEffect(() => {
+		const url = window.location.href.toString();
+		if (url.includes("html-entities") || url.includes("emoji-entities")) {
+			setIsEntityActive(true);
+		} else {
+			setIsEntityActive(false);
+		}
+	}, [entitiesButton]);
+
 	const home = (
 		<Button
 			sx={{ m: 1, display: "block" }}
@@ -191,7 +273,10 @@ export const MobilePages = () => {
 			component={NavLink}
 			to='/'
 			key='home'
-			onClick={() => setIsShadowActive(false)}
+			onClick={() => {
+				setIsShadowActive(false);
+				setIsEntityActive(false);
+			}}
 		>
 			Home
 		</Button>
@@ -203,7 +288,10 @@ export const MobilePages = () => {
 			component={NavLink}
 			to='/resources'
 			key='resources'
-			onClick={() => setIsShadowActive(false)}
+			onClick={() => {
+				setIsShadowActive(false);
+				setIsEntityActive(false);
+			}}
 		>
 			Resources
 		</Button>
@@ -251,16 +339,47 @@ export const MobilePages = () => {
 		</div>
 	);
 	const entities = (
-		<Button
-			sx={{ m: 1, display: "block" }}
-			className={classes.mobileLinks}
-			component={NavLink}
-			to='/html-entities'
-			key='entities'
-			onClick={() => setIsShadowActive(false)}
-		>
-			Entities
-		</Button>
+		<div key='entities'>
+			<Button
+				sx={{ m: 1, display: "flex" }}
+				onClick={handleEntitiesButton}
+				className={`${classes.mobileLinks} ${isEntityActive ? "active" : ""}`}
+				id='basic-button2'
+				aria-controls={entitiesOpen ? "basic-menu2" : undefined}
+				aria-haspopup='true'
+				aria-expanded={entitiesOpen ? "true" : undefined}
+			>
+				Entities
+				<KeyboardArrowDownIcon />
+			</Button>
+
+			<Menu
+				id='basic-menu2'
+				anchorEl={entitiesButton}
+				open={entitiesOpen}
+				onClose={handleEntitiesButtonClose}
+				MenuListProps={{
+					"aria-labelledby": "basic-button2",
+				}}
+			>
+				<MenuItem
+					className={classes.dropdown}
+					onClick={handleEntitiesButtonClose}
+					to='/html-entities'
+					component={NavLink}
+				>
+					HTML Entities
+				</MenuItem>
+				<MenuItem
+					className={classes.dropdown}
+					onClick={handleEntitiesButtonClose}
+					to='/emoji-entities'
+					component={NavLink}
+				>
+					Emoji Entities
+				</MenuItem>
+			</Menu>
+		</div>
 	);
 	const learn = (
 		<Button
@@ -269,7 +388,10 @@ export const MobilePages = () => {
 			component={NavLink}
 			to='/learn'
 			key='learn'
-			onClick={() => setIsShadowActive(false)}
+			onClick={() => {
+				setIsShadowActive(false);
+				setIsEntityActive(false);
+			}}
 		>
 			Learn
 		</Button>

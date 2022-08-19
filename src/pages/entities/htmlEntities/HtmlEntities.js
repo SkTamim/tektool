@@ -1,3 +1,4 @@
+import { Box, Container } from "@mui/material";
 import React, { useEffect, useReducer } from "react";
 import SearchBar from "../../../components/searchBar/SearchBar";
 import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";

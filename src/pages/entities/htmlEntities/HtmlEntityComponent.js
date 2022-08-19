@@ -16,9 +16,11 @@ const useStyles = makeStyles((theme) => ({
 		fontWeight: "500",
 		textTransform: "uppercase",
 		textDecoration: "underline",
+		margin: "0 3rem",
 		color: theme.palette.accent.black,
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "1.2rem",
+			margin: "0 1rem",
 		},
 	},
 	list: {
@@ -40,6 +42,10 @@ const useStyles = makeStyles((theme) => ({
 		width: "max-content",
 		borderRadius: "3px",
 		color: "#29b6f6",
+		margin: "0 2.5rem",
+		[theme.breakpoints.down("sm")]: {
+			margin: "0",
+		},
 	},
 }));
 
