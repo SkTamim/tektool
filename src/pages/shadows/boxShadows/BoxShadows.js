@@ -2,6 +2,7 @@ import { Container } from "@mui/material";
 import React from "react";
 import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
 import BoxShadowComponent from "./BoxShadowComponent";
+import LightBoxShadows from "./LightBoxShadows";
 import ShadowTypeNavigator from "./ShadowTypeNavigator";
 
 const BoxShadows = () => {
@@ -12,10 +13,11 @@ const BoxShadows = () => {
 			</div>
 			<ShadowTypeNavigator />
 
-			<BoxShadowComponent shadowType='Light' shadowId='light-shadows' />
+			{/* <BoxShadowComponent shadowType='Light' shadowId='light-shadows' />
 			<BoxShadowComponent shadowType='Dark' shadowId='dark-shadows' />
 			<BoxShadowComponent shadowType='Inset' shadowId='inset-shadows' />
-			<BoxShadowComponent shadowType='Colored' shadowId='colored-shadows' />
+			<BoxShadowComponent shadowType='Colored' shadowId='colored-shadows' /> */}
+			<LightBoxShadows shadowType='Light' shadowId='light-shadows' />
 		</Container>
 	);
 };
