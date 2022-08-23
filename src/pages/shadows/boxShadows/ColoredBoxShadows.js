@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const LightBoxShadows = (props) => {
+const ColoredBoxShadows = (props) => {
 	const classes = useStyles();
 
 	const {
@@ -38,7 +38,7 @@ const LightBoxShadows = (props) => {
 		hasMoreData,
 		getNextData,
 		lastData,
-	} = useFetchFromFirebase("shadows/box-shadows/light");
+	} = useFetchFromFirebase("shadows/box-shadows/colored");
 
 	useEffect(() => {
 		getData([limit(15)]);
@@ -97,7 +97,7 @@ const LightBoxShadows = (props) => {
 					<Paragraph className={classes.errorMessage}>{error}</Paragraph>
 				)}
 			</Grid>
-			<div style={{ textAlign: "center", marginTop: "20px" }}>
+			<div style={{ textAlign: "center", marginTop: "30px" }}>
 				{nextDataLoading && <CircularProgress sx={{ mt: 3 }} />}
 				{hasMoreData && <p>No More Box Shadows Available...</p>}
 			</div>
@@ -105,4 +105,4 @@ const LightBoxShadows = (props) => {
 	);
 };
 
-export default LightBoxShadows;
+export default ColoredBoxShadows;

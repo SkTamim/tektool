@@ -4,9 +4,11 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 html {
 	scroll-behavior: smooth;
 }
+
 img {
 	max-width: 100%;
 }
@@ -32,4 +34,9 @@ img {
 ::selection {
 	background-color: #e4f0ff;
 	color: #0072ff;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-size: 25px !important;
 }

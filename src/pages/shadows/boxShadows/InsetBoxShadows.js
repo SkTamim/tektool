@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const LightBoxShadows = (props) => {
+const InsetBoxShadows = (props) => {
 	const classes = useStyles();
 
 	const {
@@ -38,7 +38,7 @@ const LightBoxShadows = (props) => {
 		hasMoreData,
 		getNextData,
 		lastData,
-	} = useFetchFromFirebase("shadows/box-shadows/light");
+	} = useFetchFromFirebase("shadows/box-shadows/inset");
 
 	useEffect(() => {
 		getData([limit(15)]);
@@ -105,4 +105,4 @@ const LightBoxShadows = (props) => {
 	);
 };
 
-export default LightBoxShadows;
+export default InsetBoxShadows;
