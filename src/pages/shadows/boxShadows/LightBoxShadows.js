@@ -1,17 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import { limit } from "firebase/firestore";
 import useFetchFromFirebase from "../../../hooks/useFetchFromFirebase";
 
 import { makeStyles } from "@mui/styles";
-import { Button, CircularProgress, Grid } from "@mui/material";
+import { CircularProgress, Grid } from "@mui/material";
 import ShadowBox from "./ShadowBox";
 import Paragraph from "../../../components/UI/typography/Paragraph";
 import LoadingScreen from "../LoadingScreen";
+import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
 
 const useStyles = makeStyles((theme) => ({
-	root: {
-		paddingTop: "2rem",
-	},
 	subHeading: {
 		fontSize: "1.5rem",
 		fontWeight: "500",
@@ -83,9 +81,11 @@ const LightBoxShadows = (props) => {
 
 	return (
 		<div className={classes.root} id={props.shadowId}>
-			<h4 className={classes.subHeading}>{props.shadowType} Shadows</h4>
+			<div style={{ textAlign: "center", padding: "1rem 0" }}>
+				<HeadingSecondary>{props.shadowType} Box Shadows</HeadingSecondary>
+			</div>
 
-			<Grid container gap={8} justifyContent='center' py={4}>
+			<Grid container gap={8} justifyContent='center' py={2}>
 				{loading && <LoadingScreen />}
 				{data &&
 					data.map((data) => (
@@ -98,7 +98,7 @@ const LightBoxShadows = (props) => {
 				)}
 			</Grid>
 			<div style={{ textAlign: "center" }}>
-				{nextDataLoading && <CircularProgress />}
+				{nextDataLoading && <CircularProgress sx={{ mt: 3 }} />}
 				{hasMoreData && <p>No More Box Shadows Available...</p>}
 			</div>
 		</div>

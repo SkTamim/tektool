@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { CssBaseline, StyledEngineProvider, Toolbar } from "@mui/material";
 
 import Home from "./pages/home/Home";
@@ -15,6 +15,10 @@ import BoxShadows from "./pages/shadows/boxShadows/BoxShadows";
 import EmojiEntities from "./pages/entities/emojiEntities/EmojiEntities";
 import HtmlEntities from "./pages/entities/htmlEntities/HtmlEntities";
 import { useState } from "react";
+import LightBoxShadows from "./pages/shadows/boxShadows/LightBoxShadows";
+import DarkBoxShadows from "./pages/shadows/boxShadows/DarkBoxShadows";
+import InsetBoxShadows from "./pages/shadows/boxShadows/InsetBoxShadows";
+import ColoredBoxShadows from "./pages/shadows/boxShadows/ColoredBoxShadows";
 
 function App() {
 	const [navActive, setNavActive] = useState("");
@@ -32,7 +36,16 @@ function App() {
 					<Routes>
 						<Route path='/' element={<Home />} />
 						<Route path='/resources' element={<Resources />} />
-						<Route path='/box-shadows' element={<BoxShadows />} />
+						<Route path='/box-shadows' element={<BoxShadows />}>
+							<Route index element={<Navigate to='light' replace />} />
+							<Route
+								path='light'
+								element={<LightBoxShadows shadowType='Light' />}
+							/>
+							<Route path='dark' element={<DarkBoxShadows />} />
+							<Route path='inset' element={<InsetBoxShadows />} />
+							<Route path='colored' element={<ColoredBoxShadows />} />
+						</Route>
 						<Route path='/text-shadows' element={<TextShadows />} />
 						<Route path='/html-entities' element={<HtmlEntities />} />
 						<Route path='/emoji-entities' element={<EmojiEntities />} />
