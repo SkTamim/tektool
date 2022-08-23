@@ -97,7 +97,7 @@ const LightBoxShadows = (props) => {
 					<Paragraph className={classes.errorMessage}>{error}</Paragraph>
 				)}
 			</Grid>
-			<div style={{ textAlign: "center" }}>
+			<div style={{ textAlign: "center", marginTop: "20px" }}>
 				{nextDataLoading && <CircularProgress sx={{ mt: 3 }} />}
 				{hasMoreData && <p>No More Box Shadows Available...</p>}
 			</div>
