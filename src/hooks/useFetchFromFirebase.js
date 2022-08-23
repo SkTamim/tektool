@@ -105,6 +105,7 @@ const useFetchFromFirebase = (refUrl) => {
 		setNextDataLoading: setNextDataLoading,
 		hasMoreData: hasMoreData,
 		getNextData: getNextData,
+		lastData: state.lastData,
 	};
 };
 

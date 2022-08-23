@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { limit } from "firebase/firestore";
 import useFetchFromFirebase from "../../../hooks/useFetchFromFirebase";
 
 import { makeStyles } from "@mui/styles";
-import { Button, Grid } from "@mui/material";
+import { Button, CircularProgress, Grid } from "@mui/material";
 import ShadowBox from "./ShadowBox";
 import Paragraph from "../../../components/UI/typography/Paragraph";
 import LoadingScreen from "../LoadingScreen";
@@ -39,14 +39,35 @@ const LightBoxShadows = (props) => {
 		setNextDataLoading,
 		hasMoreData,
 		getNextData,
+		lastData,
 	} = useFetchFromFirebase("shadows/box-shadows/light");
 
 	useEffect(() => {
 		getData([limit(15)]);
 	}, []);
 
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [lastData]);
+
+	const handleScroll = (e) => {
+		let scrollTrigger =
+			window.innerHeight + e.target.documentElement.scrollTop + 1;
+		let scrollHeightTrigger = e.target.documentElement.scrollHeight - 400;
+
+		if (scrollTrigger >= scrollHeightTrigger) {
+			if (!loading) {
+				window.removeEventListener("scroll", handleScroll);
+				loadMoreData();
+			}
+		}
+	};
+
 	const loadMoreData = () => {
-		getNextData([limit(5)]);
+		getNextData([limit(10)]);
 		setNextDataLoading(true);
 	};
 
@@ -67,11 +88,8 @@ const LightBoxShadows = (props) => {
 				)}
 			</Grid>
 			<div style={{ textAlign: "center" }}>
-				{!nextDataLoading && !hasMoreData && (
-					<Button onClick={loadMoreData}>Load more</Button>
-				)}
-				{nextDataLoading && <p>Loading more data...</p>}
-				{hasMoreData && <p>No more data...</p>}
+				{nextDataLoading && <CircularProgress />}
+				{hasMoreData && <p>No More Box Shadows Available...</p>}
 			</div>
 		</div>
 	);
