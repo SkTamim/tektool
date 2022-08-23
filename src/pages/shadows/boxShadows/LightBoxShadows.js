@@ -58,6 +58,16 @@ const LightBoxShadows = (props) => {
 			window.innerHeight + e.target.documentElement.scrollTop + 1;
 		let scrollHeightTrigger = e.target.documentElement.scrollHeight - 400;
 
+		if (window.innerWidth <= 1039) {
+			scrollHeightTrigger = e.target.documentElement.scrollHeight - 600;
+		}
+		if (window.innerWidth <= 775) {
+			scrollHeightTrigger = e.target.documentElement.scrollHeight - 800;
+		}
+		if (window.innerWidth <= 495) {
+			scrollHeightTrigger = e.target.documentElement.scrollHeight - 1000;
+		}
+
 		if (scrollTrigger >= scrollHeightTrigger) {
 			if (!loading) {
 				window.removeEventListener("scroll", handleScroll);
