@@ -17,6 +17,7 @@ import LightBoxShadows from "./pages/shadows/boxShadows/LightBoxShadows";
 import DarkBoxShadows from "./pages/shadows/boxShadows/DarkBoxShadows";
 import InsetBoxShadows from "./pages/shadows/boxShadows/InsetBoxShadows";
 import ColoredBoxShadows from "./pages/shadows/boxShadows/ColoredBoxShadows";
+import { Toaster } from "react-hot-toast";
 
 function App() {
 	const [navActive, setNavActive] = useState("");
@@ -61,6 +62,7 @@ function App() {
 				</main>
 				<Footer handleNavActive={handleNavActive} />
 				<BackToTop />
+				<Toaster position='bottom-left' reverseOrder={false} />
 			</StyledEngineProvider>
 		</>
 	);

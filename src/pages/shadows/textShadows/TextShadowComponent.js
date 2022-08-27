@@ -1,6 +1,12 @@
-import React, { useEffect, useReducer } from "react";
+import React, { useEffect, useState } from "react";
 import { makeStyles } from "@mui/styles";
-import { Grid } from "@mui/material";
+import { Grid, CircularProgress } from "@mui/material";
+import { limit } from "firebase/firestore";
+import useFetchFromFirebase from "../../../hooks/useFetchFromFirebase";
+
+import { database } from "../../../firebase/FirebaseConfig";
+import { doc, setDoc } from "firebase/firestore";
+
 import Paragraph from "../../../components/UI/typography/Paragraph";
 import LoadingScreen from "../LoadingScreen";
 import TextShadowBox from "./TextShadowBox";
@@ -34,75 +40,89 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const initialDataState = {
-	loading: true,
-	error: "",
-	data: [],
-};
-const reducer = (state, action) => {
-	switch (action.type) {
-		case "FETCH_SUCCESS":
-			return {
-				loading: false,
-				data: action.payload,
-				error: "",
-			};
-		case "FETCH_ERROR":
-			return {
-				loading: false,
-				data: action.payload,
-				error: "Something went Wrong!",
-			};
-		default:
-			return state;
-	}
-};
-
 const TextShadowComponent = () => {
 	const classes = useStyles();
-	const [state, dispatch] = useReducer(reducer, initialDataState);
+	const {
+		data,
+		loading,
+		error,
+		getData,
+		nextDataLoading,
+		setNextDataLoading,
+		hasMoreData,
+		getNextData,
+		lastData,
+	} = useFetchFromFirebase("shadows/text-shadows/first");
 
 	useEffect(() => {
-		fetch("text-shadows.json")
-			.then((responce) => responce.json())
-			.then((result) => {
-				dispatch({
-					type: "FETCH_SUCCESS",
-					payload: result,
-				});
-			})
-			.catch(() => dispatch({ type: "FETCH_ERROR" }));
+		getData([limit(15)]);
 	}, []);
 
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [lastData]);
+
+	const handleScroll = (e) => {
+		let scrollTrigger =
+			window.innerHeight + e.target.documentElement.scrollTop + 1;
+		let scrollHeightTrigger = e.target.documentElement.scrollHeight - 400;
+
+		if (window.innerWidth <= 1039) {
+			scrollHeightTrigger = e.target.documentElement.scrollHeight - 600;
+		}
+		if (window.innerWidth <= 775) {
+			scrollHeightTrigger = e.target.documentElement.scrollHeight - 800;
+		}
+		if (window.innerWidth <= 495) {
+			scrollHeightTrigger = e.target.documentElement.scrollHeight - 1000;
+		}
+
+		if (scrollTrigger >= scrollHeightTrigger) {
+			if (!loading) {
+				window.removeEventListener("scroll", handleScroll);
+				loadMoreData();
+			}
+		}
+	};
+
+	const loadMoreData = () => {
+		getNextData([limit(10)]);
+		setNextDataLoading(true);
+	};
+
 	return (
-		<>
-			<section className={classes.root}>
-				<div className={classes.copyInfo}>
-					<InfoIcon />
-					<Paragraph sx={{ px: 1 }}>
-						Click on any box to copy the Shadow
-					</Paragraph>
-				</div>
-				<Grid container gap={8} justifyContent='center' py={4}>
-					{state.loading && <LoadingScreen />}
-					{state.data &&
-						state.data.map((data) => (
-							<Grid item key={data.id}>
-								<TextShadowBox
-									styles={data.styles}
-									by={data.by}
-									link={data.link}
-								/>
-							</Grid>
-						))}
-					{state.error && (
-						<Paragraph className={classes.errorMessage}>
-							{state.error}
-						</Paragraph>
-					)}
-				</Grid>
-			</section>
-		</>
+		<div className={classes.root}>
+			<div className={classes.copyInfo}>
+				<InfoIcon />
+				<Paragraph sx={{ px: 1 }}>
+					Click on any box to copy the Shadow
+				</Paragraph>
+			</div>
+			<Grid container gap={8} justifyContent='center' py={2}>
+				{loading && <LoadingScreen />}
+				{data &&
+					data.map((data) => (
+						<Grid item key={data.id}>
+							<TextShadowBox
+								styles={data.styles}
+								by={data.by}
+								link={data.link}
+							/>
+						</Grid>
+					))}
+				{error && (
+					<Paragraph className={classes.errorMessage}>{error}</Paragraph>
+				)}
+			</Grid>
+
+			<div style={{ textAlign: "center", marginTop: "20px" }}>
+				{nextDataLoading && <CircularProgress sx={{ mt: 3 }} />}
+				{hasMoreData && <p>No More Text Shadows Available...</p>}
+			</div>
+		</div>
 	);
 };
 
