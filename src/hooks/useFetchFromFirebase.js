@@ -37,6 +37,8 @@ const useFetchFromFirebase = (refUrl) => {
 	const [hasMoreData, setHasMoreData] = useState(false);
 	const [nextDataLoading, setNextDataLoading] = useState(false);
 
+	const [finalError, setFinalError] = useState("");
+
 	const databaseReference = collection(database, refUrl);
 
 	// Function for initial data load
@@ -55,6 +57,9 @@ const useFetchFromFirebase = (refUrl) => {
 					data: items,
 					lastData: lastDoc,
 				});
+				if (items <= 0) {
+					dispatch({ type: "FETCH_ERROR" });
+				}
 			})
 			.catch((err) => {
 				console.log("Getting error form getData function" + err);

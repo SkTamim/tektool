@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "@emotion/styled";
-import CopiedTost from "../../../components/tosts/CopiedTost";
+
+import toast from "react-hot-toast";
 
 const BoxWithStyle = styled.div((props) => {
 	return `width:200px;
@@ -32,15 +33,15 @@ const StyledBy = styled.a`
 	bottom: 5px;
 	text-transform: none;
 `;
-
+const notify = () => {
+	toast.success("Shadow Copied Successfully");
+};
 const TextShadowBox = (props) => {
-	const [open, setOpen] = useState(false);
-
 	let copyClickHandler = () => {
 		let shadowCss = props.styles;
 		shadowCss = shadowCss.replace(/&/g, ".yourClassName");
 		navigator.clipboard.writeText(shadowCss);
-		setOpen(true);
+		notify();
 	};
 
 	return (
@@ -53,7 +54,6 @@ const TextShadowBox = (props) => {
 					</StyledBy>
 				)}
 			</BoxWithStyle>
-			<CopiedTost open={open} setOpen={setOpen} />
 		</>
 	);
 };
