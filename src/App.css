@@ -40,3 +40,13 @@ img {
 .swiper-button-prev:after {
 	font-size: 25px !important;
 }
+.swiper-button-next,
+.swiper-button-prev {
+	background: #dcdefca4;
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 50px;
+	top: 55% !important;
+	z-index: 20 !important;
+	pointer-events: all !important;
+}
