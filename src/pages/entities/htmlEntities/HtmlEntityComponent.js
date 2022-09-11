@@ -6,29 +6,17 @@ import EntityRowHeading from "./EntityRowHeading";
 import InfoIcon from "@mui/icons-material/Info";
 import Paragraph from "../../../components/UI/typography/Paragraph";
 import CopiedTost from "../../../components/tosts/CopiedTost";
+import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
+import { Grid } from "@mui/material";
+import SearchBar from "../../../components/searchBar/SearchBar";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		padding: "2rem 0",
-	},
-	subHeading: {
-		fontSize: "1.5rem",
-		fontWeight: "500",
-		textTransform: "uppercase",
-		textDecoration: "underline",
-		margin: "0 3rem",
-		color: theme.palette.accent.black,
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "1.2rem",
-			margin: "0 1rem",
-		},
+		padding: "1rem 0",
 	},
 	list: {
 		width: "100%",
 		borderCollapse: "collapse",
-		"& tr:nth-child(2n)": {
-			backgroundColor: "#edfdff",
-		},
 	},
 	error: {
 		textAlign: "center",
@@ -36,16 +24,11 @@ const useStyles = makeStyles((theme) => ({
 	},
 	copyInfo: {
 		display: "flex",
-		alignItems: "center",
-		padding: ".2rem .5rem",
 		flexWrap: "wrap",
 		width: "max-content",
 		borderRadius: "3px",
 		color: "#29b6f6",
-		margin: "0 2.5rem",
-		[theme.breakpoints.down("sm")]: {
-			margin: "0",
-		},
+		margin: "0",
 	},
 }));
 
@@ -54,6 +37,10 @@ const HtmlEntityComponent = (props) => {
 	const classes = useStyles();
 	const { data, error, loading, entityType, id } = props;
 	let mainData = null;
+
+	const getSearchValue = (value) => {
+		console.log(value);
+	};
 
 	if (data) {
 		const type = entityType.toLowerCase();
@@ -65,15 +52,33 @@ const HtmlEntityComponent = (props) => {
 	};
 
 	return (
-		<div className={classes.root} id={id}>
-			<h2 className={classes.subHeading}>{entityType}</h2>
+		<div className={classes.root}>
+			<Grid container spacing={2} px='14px' pb='20px'>
+				<Grid item md={6} xs={12}>
+					<HeadingSecondary
+						sx={{ fontSize: "25px", padding: "0 !important", ml: "5px" }}
+					>
+						{entityType} Entity
+					</HeadingSecondary>
+					<div className={classes.copyInfo}>
+						<InfoIcon />
+						<Paragraph
+							sx={{
+								px: 1,
+								color: "inherit !important",
+								m: "0 !important",
+								fontSize: { xs: "14px", sm: "1rem" },
+							}}
+						>
+							Click on any symbol or Code to copy
+						</Paragraph>
+					</div>
+				</Grid>
+				<Grid item md={6} xs={12}>
+					<SearchBar searchValue={getSearchValue} />
+				</Grid>
+			</Grid>
 
-			<div className={classes.copyInfo}>
-				<InfoIcon />
-				<Paragraph sx={{ px: 1, color: "inherit !important" }}>
-					Click on any symbol or Code to copy
-				</Paragraph>
-			</div>
 			{loading && (
 				<>
 					<EntityLoading />

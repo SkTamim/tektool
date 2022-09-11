@@ -1,9 +1,9 @@
-import { Box, Container } from "@mui/material";
-import React, { useEffect, useReducer } from "react";
-import SearchBar from "../../../components/searchBar/SearchBar";
-import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
+import React, { useEffect, useReducer, useState } from "react";
 import EntityTypeNavigator from "./EntityTypeNavigator";
-import HtmlEntityComponent from "./HtmlEntityComponent";
+import { Outlet } from "react-router-dom";
+
+import { database } from "../../../firebase/FirebaseConfig";
+import { doc, setDoc, collection, addDoc } from "firebase/firestore";
 
 const initialDataState = {
 	loading: true,
@@ -31,33 +31,87 @@ const reducer = (state, action) => {
 };
 
 const HtmlEntities = () => {
-	const getSearchValue = (value) => {
-		console.log(value);
-	};
-
 	const [state, dispatch] = useReducer(reducer, initialDataState);
 
-	useEffect(() => {
-		fetch("entity.json")
-			.then((responce) => responce.json())
-			.then((result) => {
-				dispatch({
-					type: "FETCH_SUCCESS",
-					payload: result,
-				});
-			})
-			.catch(() => dispatch({ type: "FETCH_ERROR" }));
-	}, []);
+	// useEffect(() => {
+	// 	fetch("entity.json")
+	// 		.then((responce) => responce.json())
+	// 		.then((result) => {
+	// 			dispatch({
+	// 				type: "FETCH_SUCCESS",
+	// 				payload: result,
+	// 			});
+	// 		})
+	// 		.catch(() => dispatch({ type: "FETCH_ERROR" }));
+	// }, []);
+
+	// const addData = async (
+	// 	id,
+	// 	character,
+	// 	css,
+	// 	dec,
+	// 	entity,
+	// 	hex,
+	// 	name,
+	// 	unicode
+	// ) => {
+	// 	await setDoc(doc(database, "entities/html-entities/arrows", id), {
+	// 		id: id,
+	// 		character: character,
+	// 		css: css,
+	// 		dec: dec,
+	// 		entity: entity,
+	// 		hex: hex,
+	// 		name: name,
+	// 		unicode: unicode,
+	// 	});
+	// };
+	// addData("entity data", "0");
+	// addData(
+	// 	"index",
+	// 	"data.character",
+	// 	"data.css",
+	// 	"data.dec",
+	// 	"data.entity",
+	// 	"data.hex",
+	// 	"data.name",
+	// 	"data.unicode"
+	// );
+	const [apiData, setApiData] = useState([]);
+
+	// useEffect(() => {
+	// 	fetch("https://tektool-e6931-default-rtdb.firebaseio.com/entity-codes.json")
+	// 		.then((responce) => responce.json())
+	// 		.then((result) => {
+	// 			const myData = result.arrows;
+	// 			setApiData(myData);
+	// 		})
+	// 		.catch((err) => console.log(err));
+	// }, []);
+
+	// useEffect(() => {
+	// 	if (apiData.length != 0) {
+	// 		// apiData.forEach((element, index) => {
+	// 		// 	addData(
+	// 		// 		index,
+	// 		// 		element.character,
+	// 		// 		element.css,
+	// 		// 		element.dec,
+	// 		// 		element.entity,
+	// 		// 		element.hex,
+	// 		// 		element.name,
+	// 		// 		element.unicode
+	// 		// 	);
+	// 		// });
+	// 	}
+	// }, [apiData]);
 
 	return (
 		<>
-			<div style={{ textAlign: "center", padding: "1rem 0" }}>
-				<HeadingSecondary>HTML Entities</HeadingSecondary>
-			</div>
 			<EntityTypeNavigator />
-			<SearchBar searchValue={getSearchValue} />
+			<Outlet />
 
-			<HtmlEntityComponent
+			{/* <HtmlEntityComponent
 				data={state.data}
 				error={state.error}
 				loading={state.loading}
@@ -105,7 +159,7 @@ const HtmlEntities = () => {
 				loading={state.loading}
 				entityType='letters'
 				id='letters'
-			/>
+			/> */}
 		</>
 	);
 };
