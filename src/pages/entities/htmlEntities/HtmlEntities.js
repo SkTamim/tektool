@@ -1,9 +1,6 @@
-import { Box, Container } from "@mui/material";
 import React, { useEffect, useReducer, useState } from "react";
-import SearchBar from "../../../components/searchBar/SearchBar";
-import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
 import EntityTypeNavigator from "./EntityTypeNavigator";
-import HtmlEntityComponent from "./HtmlEntityComponent";
+import { Outlet } from "react-router-dom";
 
 import { database } from "../../../firebase/FirebaseConfig";
 import { doc, setDoc, collection, addDoc } from "firebase/firestore";
@@ -48,27 +45,27 @@ const HtmlEntities = () => {
 	// 		.catch(() => dispatch({ type: "FETCH_ERROR" }));
 	// }, []);
 
-	const addData = async (
-		id,
-		character,
-		css,
-		dec,
-		entity,
-		hex,
-		name,
-		unicode
-	) => {
-		await setDoc(doc(database, "entities/html-entities/arrows", id), {
-			id: id,
-			character: character,
-			css: css,
-			dec: dec,
-			entity: entity,
-			hex: hex,
-			name: name,
-			unicode: unicode,
-		});
-	};
+	// const addData = async (
+	// 	id,
+	// 	character,
+	// 	css,
+	// 	dec,
+	// 	entity,
+	// 	hex,
+	// 	name,
+	// 	unicode
+	// ) => {
+	// 	await setDoc(doc(database, "entities/html-entities/arrows", id), {
+	// 		id: id,
+	// 		character: character,
+	// 		css: css,
+	// 		dec: dec,
+	// 		entity: entity,
+	// 		hex: hex,
+	// 		name: name,
+	// 		unicode: unicode,
+	// 	});
+	// };
 	// addData("entity data", "0");
 	// addData(
 	// 	"index",
@@ -112,8 +109,9 @@ const HtmlEntities = () => {
 	return (
 		<>
 			<EntityTypeNavigator />
+			<Outlet />
 
-			<HtmlEntityComponent
+			{/* <HtmlEntityComponent
 				data={state.data}
 				error={state.error}
 				loading={state.loading}
@@ -161,7 +159,7 @@ const HtmlEntities = () => {
 				loading={state.loading}
 				entityType='letters'
 				id='letters'
-			/>
+			/> */}
 		</>
 	);
 };

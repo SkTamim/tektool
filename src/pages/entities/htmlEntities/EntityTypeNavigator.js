@@ -50,7 +50,7 @@ const EntityTypeNavigator = () => {
 				className={classes.swiper}
 			>
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Symbols' to='/symbols' />
+					<MyChip label='Symbols' to='/html-entities/symbols' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>

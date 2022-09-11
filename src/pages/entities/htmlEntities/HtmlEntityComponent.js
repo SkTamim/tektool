@@ -17,9 +17,6 @@ const useStyles = makeStyles((theme) => ({
 	list: {
 		width: "100%",
 		borderCollapse: "collapse",
-		"& tr:nth-child(2n)": {
-			backgroundColor: "#edfdff",
-		},
 	},
 	error: {
 		textAlign: "center",
@@ -55,7 +52,7 @@ const HtmlEntityComponent = (props) => {
 	};
 
 	return (
-		<div className={classes.root} id={id}>
+		<div className={classes.root}>
 			<Grid container spacing={2} px='14px' pb='20px'>
 				<Grid item md={6} xs={12}>
 					<HeadingSecondary
