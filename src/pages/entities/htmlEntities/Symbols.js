@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, CircularProgress, Grid } from "@mui/material";
+import { CircularProgress, Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import InfoIcon from "@mui/icons-material/Info";
 import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
@@ -8,11 +8,11 @@ import SearchBar from "../../../components/searchBar/SearchBar";
 import EntityLoading from "../EntityLoading";
 import EntityRowHeading from "./EntityRowHeading";
 import EntityRow from "./EntityRow";
-import CopiedTost from "../../../components/tosts/CopiedTost";
+import ButtonSecondary from "../../../components/UI/button/ButtonSecondary";
 
 import useFetchFromFirebase from "../../../hooks/useFetchFromFirebase";
+import useSearchFirebase from "../../../hooks/useSearchFirebase";
 import { limit } from "firebase/firestore";
-import ButtonSecondary from "../../../components/UI/button/ButtonSecondary";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	tableContainer: {
 		overflowX: "scroll",
+		paddingBottom: "20px",
 
 		"&::-webkit-scrollbar": {
 			height: "10px",
@@ -55,33 +56,20 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Symbols = (props) => {
-	// const [data, setData] = useState([]);
-	const [open, setOpen] = useState(false);
+	const [isSharched, setIsSharched] = useState(false);
 
-	// const getData = () => {
-	// 	const ref = collection(database, "entities/html-entities/symbols");
-	// 	getDocs(ref)
-	// 		.then((response) => {
-	// 			let items = [];
-	// 			response.docs.map((item) => {
-	// 				let myData = item.data();
-	// 				let finalData = { ...myData, id: item.id };
-	// 				items.push(finalData);
-	// 			});
-	// 			setData(items);
-	// 		})
-	// 		.catch((err) => {
-	// 			console.log(err);
-	// 		});
-	// };
-
-	// useEffect(() => {
-	// 	getData();
-	// }, []);
-	// console.log(data);
+	const { searchData, searchLoading, searchError, getSearchData } =
+		useSearchFirebase("entities/html-entities/symbols", "symbols");
 
 	const getSearchValue = (value) => {
-		console.log(value);
+		getSearchData(value.toLowerCase());
+		setIsSharched(true);
+	};
+
+	const getSerachLetter = (letter) => {
+		if (letter.length === 0) {
+			setIsSharched(false);
+		}
 	};
 
 	const classes = useStyles();
@@ -95,42 +83,11 @@ const Symbols = (props) => {
 		setNextDataLoading,
 		hasMoreData,
 		getNextData,
-		lastData,
 	} = useFetchFromFirebase("entities/html-entities/symbols");
 
 	useEffect(() => {
 		getData([limit(15)]);
 	}, []);
-
-	useEffect(() => {
-		// window.addEventListener("scroll", handleScroll);
-		// return () => {
-		// 	window.removeEventListener("scroll", handleScroll);
-		// };
-	}, [lastData]);
-
-	const handleScroll = (e) => {
-		let scrollTrigger =
-			window.innerHeight + e.target.documentElement.scrollTop + 1;
-		let scrollHeightTrigger = e.target.documentElement.scrollHeight - 400;
-
-		if (window.innerWidth <= 1039) {
-			scrollHeightTrigger = e.target.documentElement.scrollHeight - 600;
-		}
-		if (window.innerWidth <= 775) {
-			scrollHeightTrigger = e.target.documentElement.scrollHeight - 800;
-		}
-		if (window.innerWidth <= 495) {
-			scrollHeightTrigger = e.target.documentElement.scrollHeight - 1000;
-		}
-
-		if (scrollTrigger >= scrollHeightTrigger) {
-			if (!loading) {
-				window.removeEventListener("scroll", handleScroll);
-				// loadMoreData();
-			}
-		}
-	};
 
 	const loadMoreData = () => {
 		getNextData([limit(10)]);
@@ -161,47 +118,87 @@ const Symbols = (props) => {
 					</div>
 				</Grid>
 				<Grid item md={6} xs={12}>
-					<SearchBar searchValue={getSearchValue} />
+					<SearchBar
+						searchValue={getSearchValue}
+						serachLetter={getSerachLetter}
+					/>
 				</Grid>
 			</Grid>
 
-			{loading && (
-				<>
-					<EntityLoading />
-					<EntityLoading />
-					<EntityLoading />
-					<EntityLoading />
-					<EntityLoading />
-					<EntityLoading />
-					<EntityLoading />
-					<EntityLoading />
-				</>
-			)}
+			{error && !isSharched && <p className={classes.error}>{error}</p>}
 
-			{error && <p className={classes.error}>{error}</p>}
-			{data && (
+			{!error && !isSharched && (
 				<div className={classes.tableContainer}>
 					<table className={classes.list}>
 						<thead>
 							<EntityRowHeading />
 						</thead>
 						<tbody>
-							{data.map((element, index) => {
-								return <EntityRow data={element} key={element.name + index} />;
-							})}
+							{loading && (
+								<>
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+								</>
+							)}
+							{data &&
+								data.map((element, index) => {
+									return (
+										<EntityRow data={element} key={element.name + index} />
+									);
+								})}
+						</tbody>
+					</table>
+
+					<div style={{ textAlign: "center", marginTop: "20px" }}>
+						{!nextDataLoading && (
+							<ButtonSecondary onClick={loadMoreData}>
+								Load More
+							</ButtonSecondary>
+						)}
+						{nextDataLoading && <CircularProgress m='3' />}
+						{hasMoreData && <p>No More Entity Codes Available...</p>}
+					</div>
+				</div>
+			)}
+
+			{searchError && isSharched && (
+				<p className={classes.error}>{searchError}</p>
+			)}
+			{!searchError && isSharched && (
+				<div className={classes.tableContainer}>
+					<table className={classes.list}>
+						<thead>
+							<EntityRowHeading />
+						</thead>
+						<tbody>
+							{searchLoading && (
+								<>
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+									<EntityLoading />
+								</>
+							)}
+							{searchData &&
+								searchData.map((element, index) => {
+									return (
+										<EntityRow data={element} key={element.name + index} />
+									);
+								})}
 						</tbody>
 					</table>
 				</div>
 			)}
-			<CopiedTost open={open} setOpen={setOpen} />
-
-			<div style={{ textAlign: "center", marginTop: "20px" }}>
-				{!nextDataLoading && (
-					<ButtonSecondary onClick={loadMoreData}>Load More</ButtonSecondary>
-				)}
-				{nextDataLoading && <CircularProgress m='3' />}
-				{hasMoreData && <p>No More Entity Codes Available...</p>}
-			</div>
 		</div>
 	);
 };
