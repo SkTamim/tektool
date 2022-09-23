@@ -21,6 +21,12 @@ import TextShadows from "./pages/shadows/textShadows/TextShadows";
 
 import HtmlEntities from "./pages/entities/htmlEntities/HtmlEntities";
 import Symbols from "./pages/entities/htmlEntities/Symbols";
+import Arrows from "./pages/entities/htmlEntities/Arrows";
+import Currency from "./pages/entities/htmlEntities/Currency";
+import Punctuation from "./pages/entities/htmlEntities/Punctuation";
+import Math from "./pages/entities/htmlEntities/Math";
+import Numbers from "./pages/entities/htmlEntities/Numbers";
+import Letters from "./pages/entities/htmlEntities/Letters";
 
 import EmojiEntities from "./pages/entities/emojiEntities/EmojiEntities";
 
@@ -66,6 +72,24 @@ function App() {
 							<Route
 								path='symbols'
 								element={<Symbols entityType='Symbols' />}
+							/>
+							<Route path='arrows' element={<Arrows entityType='Arrows' />} />
+							<Route
+								path='currency'
+								element={<Currency entityType='Currency' />}
+							/>
+							<Route
+								path='punctuation'
+								element={<Punctuation entityType='Punctuation' />}
+							/>
+							<Route path='math' element={<Math entityType='Math' />} />
+							<Route
+								path='numbers'
+								element={<Numbers entityType='Numbers' />}
+							/>
+							<Route
+								path='letters'
+								element={<Letters entityType='Letters' />}
 							/>
 						</Route>
 

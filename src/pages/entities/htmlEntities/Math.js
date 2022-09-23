@@ -55,11 +55,11 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const Arrows = (props) => {
+const Math = (props) => {
 	const [isSharched, setIsSharched] = useState(false);
 
 	const { searchData, searchLoading, searchError, getSearchData } =
-		useSearchFirebase("entities/html-entities/arrows", "arrows");
+		useSearchFirebase("entities/html-entities/math", "math");
 
 	const getSearchValue = (value) => {
 		getSearchData(value.toLowerCase());
@@ -83,7 +83,7 @@ const Arrows = (props) => {
 		setNextDataLoading,
 		hasMoreData,
 		getNextData,
-	} = useFetchFromFirebase("entities/html-entities/arrows");
+	} = useFetchFromFirebase("entities/html-entities/math");
 
 	useEffect(() => {
 		getData([limit(15)]);
@@ -203,4 +203,4 @@ const Arrows = (props) => {
 	);
 };
 
-export default Arrows;
+export default Math;

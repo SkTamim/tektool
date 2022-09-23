@@ -54,27 +54,27 @@ const EntityTypeNavigator = () => {
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Arrows' to='/arrows' />
+					<MyChip label='Arrows' to='/html-entities/arrows' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Currency' to='/currency' />
+					<MyChip label='Currency' to='/html-entities/currency' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Punctuation' to='/punctuation' />
+					<MyChip label='Punctuation' to='/html-entities/punctuation' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Math' to='/math' />
+					<MyChip label='Math' to='/html-entities/math' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Numbers' to='/numbers' />
+					<MyChip label='Numbers' to='/html-entities/numbers' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Letters' to='/letters' />
+					<MyChip label='Letters' to='/html-entities/letters' />
 				</SwiperSlide>
 			</Swiper>
 		</nav>
