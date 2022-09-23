@@ -39,6 +39,11 @@ const SearchBar = (props) => {
 		}
 	};
 	const searchValueRef = useRef();
+
+	const handleChange = (e) => {
+		props.serachLetter(e.target.value);
+	};
+
 	return (
 		<Container sx={{ p: "0 !important" }}>
 			<form className={classes.root} onSubmit={handleSearch}>
@@ -50,6 +55,7 @@ const SearchBar = (props) => {
 					id='search'
 					ref={searchValueRef}
 					className={classes.input}
+					onChange={handleChange}
 				/>
 				<ButtonSecondary type='submit'>
 					<SearchIcon />
