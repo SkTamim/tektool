@@ -21,6 +21,7 @@ import TextShadows from "./pages/shadows/textShadows/TextShadows";
 
 import HtmlEntities from "./pages/entities/htmlEntities/HtmlEntities";
 import Symbols from "./pages/entities/htmlEntities/Symbols";
+import Arrows from "./pages/entities/htmlEntities/Arrows";
 
 import EmojiEntities from "./pages/entities/emojiEntities/EmojiEntities";
 
@@ -67,6 +68,7 @@ function App() {
 								path='symbols'
 								element={<Symbols entityType='Symbols' />}
 							/>
+							<Route path='arrows' element={<Arrows entityType='Arrows' />} />
 						</Route>
 
 						<Route path='/emoji-entities' element={<EmojiEntities />} />
