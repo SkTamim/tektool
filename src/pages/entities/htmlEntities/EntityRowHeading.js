@@ -3,13 +3,23 @@ import React from "react";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		borderBottom: `1px solid ${theme.palette.accent.darkGrey}`,
+		borderBottom: `1px solid #eee`,
+		backgroundColor: "#85d9ff",
 	},
 	text: {
 		padding: ".8rem",
 		fontWeight: 500,
-		fontSize: "1.3rem",
-		color: theme.palette.accent.lightGrey,
+		fontSize: "1.1rem",
+		color: theme.palette.accent.darkGrey,
+		textTransform: "uppercase",
+		whiteSpace: "nowrap",
+
+		"&:first-child": {
+			position: "sticky",
+			left: 0,
+			backgroundColor: "#85d9ff",
+			zIndex: "2",
+		},
 	},
 }));
 
