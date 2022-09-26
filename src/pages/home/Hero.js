@@ -60,10 +60,10 @@ const Hero = () => {
 						The all in one plateform for developers
 					</Typography>
 					<Paragraph>
-						TekTool is a one-stop platform specifically designed for the
-						ever-growing, demanding needs of developers, providing a complete
-						array of tools, resources, tutorials and a variety of other things
-						to facilitate maximum productivity.
+						TekTool is a one-stop platform made for Developers to provide
+						various kinds of Free productivity tools, Development related
+						resources, Learning resources, tutorials, and a variety of other
+						things to facilitate maximum productivity.
 					</Paragraph>
 					<ButtonPrimary
 						sx={{ width: "max-content", mb: 10, mt: 2 }}
