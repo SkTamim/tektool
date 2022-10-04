@@ -46,35 +46,61 @@ const EntityTypeNavigator = () => {
 					1100: {
 						slidesPerView: 7,
 					},
+					1300: {
+						slidesPerView: 8,
+					},
+					1650: {
+						slidesPerView: 10,
+					},
 				}}
 				className={classes.swiper}
 			>
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Symbols' to='/html-entities/symbols' />
+					<MyChip label='Face' to='/emoji-entities/face' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Arrows' to='/html-entities/arrows' />
+					<MyChip label='Gesture' to='/emoji-entities/gesture' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Currency' to='/html-entities/currency' />
+					<MyChip label='People' to='/emoji-entities/people' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Punctuation' to='/html-entities/punctuation' />
+					<MyChip label='Hart' to='/emoji-entities/hart' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Math' to='/html-entities/math' />
+					<MyChip label='Sport' to='/emoji-entities/sport' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Numbers' to='/html-entities/numbers' />
+					<MyChip label='Nature' to='/emoji-entities/nature' />
 				</SwiperSlide>
 
 				<SwiperSlide className={classes.swiperSlide}>
-					<MyChip label='Letters' to='/html-entities/letters' />
+					<MyChip label='Animal' to='/emoji-entities/animal' />
+				</SwiperSlide>
+
+				<SwiperSlide className={classes.swiperSlide}>
+					<MyChip label='Food & Drink' to='/emoji-entities/food-drink' />
+				</SwiperSlide>
+
+				<SwiperSlide className={classes.swiperSlide}>
+					<MyChip label='Objects' to='/emoji-entities/objects' />
+				</SwiperSlide>
+
+				<SwiperSlide className={classes.swiperSlide}>
+					<MyChip label='Symbol' to='/emoji-entities/symbol' />
+				</SwiperSlide>
+
+				<SwiperSlide className={classes.swiperSlide}>
+					<MyChip label='Vehicle' to='/emoji-entities/vehicle' />
+				</SwiperSlide>
+
+				<SwiperSlide className={classes.swiperSlide}>
+					<MyChip label='Flags' to='/emoji-entities/flags' />
 				</SwiperSlide>
 			</Swiper>
 		</nav>

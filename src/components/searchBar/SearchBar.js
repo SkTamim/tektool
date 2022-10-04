@@ -6,14 +6,14 @@ import { Alert, Container, Snackbar, Stack, TextField } from "@mui/material";
 
 const useStyles = makeStyles({
 	root: {
-		padding: ".5rem 0",
 		display: "flex",
+		padding: 0,
 	},
 	input: {
 		padding: ".5rem",
 		outline: "none",
 		border: "1px solid",
-		borderRadius: "2px",
+		borderRadius: "3px",
 		fontSize: "inherit",
 		width: "100%",
 		"&:focus,&:active": {
@@ -39,8 +39,13 @@ const SearchBar = (props) => {
 		}
 	};
 	const searchValueRef = useRef();
+
+	const handleChange = (e) => {
+		props.serachLetter(e.target.value);
+	};
+
 	return (
-		<Container>
+		<Container sx={{ p: "0 !important" }}>
 			<form className={classes.root} onSubmit={handleSearch}>
 				<input
 					placeholder='Search here'
@@ -50,6 +55,7 @@ const SearchBar = (props) => {
 					id='search'
 					ref={searchValueRef}
 					className={classes.input}
+					onChange={handleChange}
 				/>
 				<ButtonSecondary type='submit'>
 					<SearchIcon />

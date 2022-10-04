@@ -27,10 +27,8 @@ const EntityRowHeading = () => {
 	const classes = useStyles();
 	return (
 		<tr className={classes.root}>
-			<th className={classes.text}>Symbol</th>
+			<th className={classes.text}>Emoji</th>
 			<th className={classes.text}>Entity</th>
-			<th className={classes.text}>HTML Code</th>
-			<th className={classes.text}>CSS Code</th>
 			<th className={classes.text}>Unicode</th>
 			<th className={classes.text}>Name</th>
 		</tr>

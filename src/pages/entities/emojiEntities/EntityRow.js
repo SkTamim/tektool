@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const EntityRow = (props) => {
-	const { character, entity, hex, css, unicode, name } = props.data;
+	const { emoji, html, unicode, shortname, name } = props.data;
 	const classes = useStyles();
 
 	const notify = () => {
@@ -49,24 +49,16 @@ const EntityRow = (props) => {
 	return (
 		<>
 			<tr className={classes.root}>
-				<td onClick={() => copyTextHandler(character)} className={classes.text}>
-					{character}
+				<td onClick={() => copyTextHandler(emoji)} className={classes.text}>
+					{emoji}
 				</td>
-				<td onClick={() => copyTextHandler(entity)} className={classes.text}>
-					{entity}
-				</td>
-				<td onClick={() => copyTextHandler(hex)} className={classes.text}>
-					{hex}
-				</td>
-				<td onClick={() => copyTextHandler(css)} className={classes.text}>
-					{css}
+				<td onClick={() => copyTextHandler(html)} className={classes.text}>
+					{html}
 				</td>
 				<td onClick={() => copyTextHandler(unicode)} className={classes.text}>
 					{unicode}
 				</td>
-				<td className={classes.text} width='250'>
-					{name}
-				</td>
+				<td className={classes.text}>{name}</td>
 			</tr>
 		</>
 	);
