@@ -8,6 +8,7 @@ import ShadowBox from "./ShadowBox";
 import Paragraph from "../../../components/UI/typography/Paragraph";
 import LoadingScreen from "../LoadingScreen";
 import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
+import ButtonSecondary from "../../../components/UI/button/ButtonSecondary";
 
 const useStyles = makeStyles((theme) => ({
 	subHeading: {
@@ -37,42 +38,11 @@ const InsetBoxShadows = (props) => {
 		setNextDataLoading,
 		hasMoreData,
 		getNextData,
-		lastData,
 	} = useFetchFromFirebase("shadows/box-shadows/inset");
 
 	useEffect(() => {
 		getData([limit(15)]);
 	}, []);
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, [lastData]);
-
-	const handleScroll = (e) => {
-		let scrollTrigger =
-			window.innerHeight + e.target.documentElement.scrollTop + 1;
-		let scrollHeightTrigger = e.target.documentElement.scrollHeight - 400;
-
-		if (window.innerWidth <= 1039) {
-			scrollHeightTrigger = e.target.documentElement.scrollHeight - 600;
-		}
-		if (window.innerWidth <= 775) {
-			scrollHeightTrigger = e.target.documentElement.scrollHeight - 800;
-		}
-		if (window.innerWidth <= 495) {
-			scrollHeightTrigger = e.target.documentElement.scrollHeight - 1000;
-		}
-
-		if (scrollTrigger >= scrollHeightTrigger) {
-			if (!loading) {
-				window.removeEventListener("scroll", handleScroll);
-				loadMoreData();
-			}
-		}
-	};
 
 	const loadMoreData = () => {
 		getNextData([limit(10)]);
@@ -98,7 +68,10 @@ const InsetBoxShadows = (props) => {
 				)}
 			</Grid>
 			<div style={{ textAlign: "center", marginTop: "20px" }}>
-				{nextDataLoading && <CircularProgress sx={{ mt: 3 }} />}
+				{!nextDataLoading && !hasMoreData && (
+					<ButtonSecondary onClick={loadMoreData}>Load More</ButtonSecondary>
+				)}
+				{nextDataLoading && <CircularProgress m='3' />}
 				{hasMoreData && <p>No More Box Shadows Available...</p>}
 			</div>
 		</div>

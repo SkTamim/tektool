@@ -46,23 +46,29 @@ const useStyles = makeStyles({
 
 const ShadowBox = (props) => {
 	const classes = useStyles();
-	const [copyText, setCopyText] = useState("Click to Copy!");
+	const [copyText, setCopyText] = useState(false);
 
 	let copyClickHandler = () => {
-		setCopyText("Copied!");
+		setCopyText(true);
 
 		let shadowCss = props.styles;
 		shadowCss = shadowCss.replace(/&/g, ".yourClassName");
 		navigator.clipboard.writeText(shadowCss);
-
-		setTimeout(() => {
-			setCopyText("Click to Copy!");
-		}, 1000);
 	};
+
+	useEffect(() => {
+		const timeOut = setTimeout(() => {
+			setCopyText(false);
+		}, 2000);
+
+		return () => {
+			clearTimeout(timeOut);
+		};
+	});
 
 	return (
 		<BoxWithStyle styles={props.styles} onClick={copyClickHandler}>
-			<p>{copyText}</p>
+			<p>{copyText ? "Copied!" : "Click to Copy!"}</p>
 			{(props.link ? (
 				<a href={props.link} className={classes.link} target='_blank'>
 					By {props.by}
