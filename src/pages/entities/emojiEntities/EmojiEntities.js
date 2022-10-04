@@ -1,8 +1,14 @@
 import React from "react";
-import ComingSoon from "../../../helper/ComingSoon";
+import EntityTypeNavigator from "./EntityTypeNavigator";
+import { Outlet } from "react-router-dom";
 
 const EmojiEntities = () => {
-	return <ComingSoon />;
+	return (
+		<>
+			<EntityTypeNavigator />
+			<Outlet />
+		</>
+	);
 };
 
 export default EmojiEntities;
