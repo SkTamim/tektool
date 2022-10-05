@@ -21,20 +21,20 @@ const features = [
 	{
 		heading: "Shadows Page",
 		description:
-			"In this page, you will find awesome Box shadows and Text shadows to use in you next project.",
+			"In this section, you will find awesome Box shadows and Text shadows to use in you next project.",
 		img: featureImg2,
 		order: "right",
-		to: "/shadows",
+		to: "/box-shadows/light",
 		color: "blue",
 		number: "02",
 	},
 	{
 		heading: "Entities Page",
 		description:
-			"In this page, you will find HTML entity code, Unicode and CSS code for all spacial characters and imogies available in the web.",
+			"In this section, you will find HTML entity code, Unicode and CSS code for all spacial characters and Emojies available in the web.",
 		img: featureImg3,
 		order: "left",
-		to: "/entities",
+		to: "/html-entities/symbols",
 		number: "03",
 	},
 	{
