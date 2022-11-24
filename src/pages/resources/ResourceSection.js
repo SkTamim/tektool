@@ -2,16 +2,14 @@ import { CircularProgress, Grid } from "@mui/material";
 import React, { useEffect } from "react";
 import ResourceItem from "./ResourceItem";
 import ResourceLoading from "./ResourceLoading";
+import Paragraph from "../../components/UI/typography/Paragraph";
+import ButtonSecondary from "../../components/UI/button/ButtonSecondary";
 
 import useFetchFromFirebase from "../../hooks/useFetchFromFirebase";
 import { limit, orderBy } from "firebase/firestore";
 import HeadingSecondary from "../../components/UI/typography/HeadingSecondary";
 
-import CollectionsIcon from "@mui/icons-material/Collections";
-import Paragraph from "../../components/UI/typography/Paragraph";
-import ButtonSecondary from "../../components/UI/button/ButtonSecondary";
-
-const ResourceSection = () => {
+const ResourceSection = (props) => {
 	const {
 		data,
 		loading,
@@ -21,7 +19,7 @@ const ResourceSection = () => {
 		setNextDataLoading,
 		hasMoreData,
 		getNextData,
-	} = useFetchFromFirebase("resources/media/images-videos");
+	} = useFetchFromFirebase(props.fetchUrl);
 
 	useEffect(() => {
 		getData([limit(8), orderBy("id", "asc")]);
@@ -42,8 +40,8 @@ const ResourceSection = () => {
 		>
 			<Grid item xs={12} mb={2}>
 				<HeadingSecondary className='resource-heading'>
-					<CollectionsIcon sx={{ color: "#008DA3", mr: 1 }} />
-					Free stock Images and Videos
+					{props.icon}
+					{props.heading}
 				</HeadingSecondary>
 			</Grid>
 

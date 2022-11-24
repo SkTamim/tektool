@@ -3,6 +3,9 @@ import { Container } from "@mui/material";
 import AutoCompleteSearchBar from "../../components/searchBar/AutoCompleteSearchBar";
 import ResourceSection from "./ResourceSection";
 
+import CollectionsIcon from "@mui/icons-material/Collections";
+import WallpaperIcon from "@mui/icons-material/Wallpaper";
+
 const Resources = () => {
 	const [isSharched, setIsSharched] = useState(false);
 
@@ -20,7 +23,16 @@ const Resources = () => {
 	return (
 		<Container maxWidth='xl' sx={{ py: 4 }} component='main'>
 			<AutoCompleteSearchBar searchList={searchList} />
-			<ResourceSection />
+			<ResourceSection
+				fetchUrl='resources/media/images-videos'
+				heading='Free stock Images and Videos'
+				icon={<CollectionsIcon sx={{ color: "#008DA3", mr: 1 }} />}
+			/>
+			<ResourceSection
+				fetchUrl='resources/media/vector-graphics'
+				heading='Free vector graphics'
+				icon={<WallpaperIcon sx={{ color: "#008DA3", mr: 1 }} />}
+			/>
 		</Container>
 	);
 };
@@ -29,6 +41,6 @@ export default Resources;
 
 const searchList = [
 	"Free Stock Images and Videos",
-	"Free SVG images",
+	"Free vector graphics",
 	"Free Icons",
 ];
