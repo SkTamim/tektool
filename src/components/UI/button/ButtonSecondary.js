@@ -23,6 +23,8 @@ const ButtonSecondary = (props) => {
 			to={props.to}
 			type={props.type}
 			onClick={props.onClick}
+			href={props.href}
+			target={props.target}
 		>
 			{props.children}
 		</Button>

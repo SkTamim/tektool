@@ -50,3 +50,21 @@ img {
 	z-index: 20 !important;
 	pointer-events: all !important;
 }
+
+.resource-heading {
+	font-size: calc(16px + 1vw);
+	text-transform: capitalize !important;
+	text-align: center;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+}
+.resource-heading svg {
+	font-size: calc(20px + 1vw);
+	display: block;
+}
+
+/* Error message */
+.errorMessage {
+	color: #ef0f4f;
+}
