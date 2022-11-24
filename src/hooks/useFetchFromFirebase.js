@@ -71,8 +71,8 @@ const useFetchFromFirebase = (refUrl) => {
 	const getNextData = (queries) => {
 		const nextDataQuery = query(
 			databaseReference,
-			startAfter(state.lastData),
-			...queries
+			...queries,
+			startAfter(state.lastData)
 		);
 		getDocs(nextDataQuery)
 			.then((response) => {
