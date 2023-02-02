@@ -11,6 +11,7 @@ import SendIcon from "@mui/icons-material/Send";
 import InfoIcon from "@mui/icons-material/Info";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import AddToPhotosIcon from "@mui/icons-material/AddToPhotos";
 import { Box } from "@mui/system";
 import { NavLink } from "react-router-dom";
 
@@ -220,6 +221,20 @@ export const Footer = ({ handleNavActive }) => {
 							>
 								<SendIcon sx={{ mr: 1 }} />
 								Send suggestion / resources
+							</Link>
+							<Link
+								underline='hover'
+								component={NavLink}
+								to='/add-resource'
+								sx={{
+									display: "flex",
+									alignItems: "center",
+									color: "inherit",
+									my: 2,
+								}}
+							>
+								<AddToPhotosIcon sx={{ mr: 1 }} />
+								Add resource
 							</Link>
 							<Link
 								underline='hover'
