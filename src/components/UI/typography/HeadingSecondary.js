@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
 		textTransform: "uppercase",
 		fontWeight: 500,
 		padding: ".5rem 0",
+		fontSize: "calc(20px + 1vw)",
 	},
 	blue: {
 		backgroundImage: `linear-gradient(90deg,${theme.palette.gradientBlue.dark},${theme.palette.gradientBlue.light})`,

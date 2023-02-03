@@ -47,6 +47,9 @@ import Symbol from "./pages/entities/emojiEntities/Symbol";
 import Vehicle from "./pages/entities/emojiEntities/Vehicle";
 import Flags from "./pages/entities/emojiEntities/Flags";
 
+// OTHER ROUTES
+import AddResource from "./dashboard/AddResource";
+
 function App() {
 	const [navActive, setNavActive] = useState("");
 	const handleNavActive = () => {
@@ -119,6 +122,10 @@ function App() {
 					</Route>
 
 					<Route path='/learn' element={<Learn />} />
+					{/* NAV LINKS END */}
+
+					{/* Other routes */}
+					<Route path='/add-resource' element={<AddResource />} />
 				</Routes>
 				<Footer handleNavActive={handleNavActive} />
 				<BackToTop />

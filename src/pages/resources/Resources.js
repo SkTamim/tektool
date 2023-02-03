@@ -5,6 +5,7 @@ import ResourceSection from "./ResourceSection";
 
 import CollectionsIcon from "@mui/icons-material/Collections";
 import WallpaperIcon from "@mui/icons-material/Wallpaper";
+import AppsIcon from "@mui/icons-material/Apps";
 
 const Resources = () => {
 	const [isSharched, setIsSharched] = useState(false);
@@ -32,6 +33,11 @@ const Resources = () => {
 				fetchUrl='resources/media/vector-graphics'
 				heading='Free vector graphics'
 				icon={<WallpaperIcon sx={{ color: "#008DA3", mr: 1 }} />}
+			/>
+			<ResourceSection
+				fetchUrl='resources/media/icons'
+				heading='Free Icons'
+				icon={<AppsIcon sx={{ color: "#008DA3", mr: 1 }} />}
 			/>
 		</Container>
 	);
