@@ -235,7 +235,7 @@ const AddResourceForm = () => {
                         },
                     }}
                 >
-                    Submit
+                    {success ? "Submitting..." : "Submit"}
                 </LoadingButton>
             </Stack>
         </form>
