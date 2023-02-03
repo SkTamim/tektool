@@ -9,12 +9,13 @@ import {
 } from "firebase/firestore";
 import { database } from "../firebase/FirebaseConfig";
 import { storage } from "../firebase/FirebaseConfig";
-import { ref, uploadBytes } from 'firebase/storage'
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
 import Compressor from 'compressorjs';
 
 
 export const getResourceData = (data, isSuccess) => {
 	let url = "";
+	let mainData;
 
 	if (data.category === "Free images and videos") {
 		url = "resources/media/images-videos";
@@ -31,9 +32,24 @@ export const getResourceData = (data, isSuccess) => {
 
 	// Add image to firebase storage function
 	const addImage = (image) => {
-		const fileUploadRef = ref(storage, `${url}/${image.name}`)
-		uploadBytes(fileUploadRef, image).then(() => {
+		const filePathRef = ref(storage, `${url}/${image.name}`)
+		uploadBytes(filePathRef, image).then(() => {
 			console.log("image uploaded");
+
+			// Getting image url form firebase strage and adding the url to the main data Object and Send data finally 🤩
+			getDownloadURL(ref(storage, filePathRef))
+				.then((url) => {
+
+					// Add data to firestore
+					mainData = { ...mainData, thumbnail: url }
+					addData(mainData);
+
+					// Send Succsedd massege
+					isSuccess(true)
+				})
+				.catch((error) => {
+					console.log("Getting error form getDownloadURL function " + error);
+				});
 		})
 	}
 
@@ -50,12 +66,9 @@ export const getResourceData = (data, isSuccess) => {
 					currentDataId = "0" + currentDataId;
 				}
 
-				const mainData = { ...data, id: currentDataId };
+				mainData = { ...data, id: currentDataId };
 				delete mainData.category;
 				delete mainData.resourceImage;
-
-				// Add data to firestore 
-				addData(mainData);
 
 				// Compress the image=============
 				new Compressor(data.resourceImage, {
@@ -65,11 +78,9 @@ export const getResourceData = (data, isSuccess) => {
 						addImage(compressedImg)
 					},
 					error(err) {
-						console.log(err.message);
+						console.log("Getting error form Compressor Class " + err);
 					},
 				});
-
-				isSuccess(true)
 			})
 			.catch((err) => {
 				console.log("Getting error form getLastId function" + err);
