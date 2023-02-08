@@ -27,13 +27,13 @@ Video tutorial on Forking – <a href="https://youtu.be/RlPMMP52rgE">Click to Wa
 <h4>Step 3 :-</h4> 
 <p>Then create a new branch and do what you want.</p>
 <kbd>
-<img src="[https://raw.githubusercontent.com/SkTamim/tektool/master/src/assets/images/Documentation/branch.jpg](https://firebasestorage.googleapis.com/v0/b/tektool-e6931.appspot.com/o/documentation%2Fbranch.jpg?alt=media&token=44960b9f-37cf-467d-a4cd-1fc2304dba77)" alt="Branch creating image">
+<img src="https://firebasestorage.googleapis.com/v0/b/tektool-e6931.appspot.com/o/documentation%2Fbranch.jpg?alt=media&token=44960b9f-37cf-467d-a4cd-1fc2304dba77" alt="Branch creating image">
 </kbd>
 
 <h4>Step 4 :-</h4> 
 <p>When you are satisfied with the changes you made, make a pull request with a proper description.</p>
 <kbd>
-<img src="[https://raw.githubusercontent.com/SkTamim/tektool/master/src/assets/images/Documentation/pull%20request.png](https://firebasestorage.googleapis.com/v0/b/tektool-e6931.appspot.com/o/documentation%2Fpull%20request.png?alt=media&token=deb20aa8-903a-4cdc-b8b8-a3e9f308b48c)" alt="Pull request image">
+<img src="https://firebasestorage.googleapis.com/v0/b/tektool-e6931.appspot.com/o/documentation%2Fpull%20request.png?alt=media&token=deb20aa8-903a-4cdc-b8b8-a3e9f308b48c" alt="Pull request image">
 </kbd>
 <hr>
 
