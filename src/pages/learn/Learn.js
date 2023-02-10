@@ -1,9 +1,13 @@
 import { Box } from "@mui/system";
-import React from "react";
+import React, { useEffect } from "react";
 
 import ComingSoon from "../../helper/ComingSoon";
 
 const Learn = () => {
+	useEffect(() => {
+		document.title = "TekTool - Learning Portal"
+	}, [])
+
 	return (
 		<Box
 			sx={{

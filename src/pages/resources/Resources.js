@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "@mui/material";
 import AutoCompleteSearchBar from "../../components/searchBar/AutoCompleteSearchBar";
 import ResourceSection from "./ResourceSection";
@@ -20,6 +20,10 @@ const Resources = () => {
 			setIsSharched(false);
 		}
 	};
+
+	useEffect(() => {
+		document.title = "TekTool - Resources for Developers"
+	}, [])
 
 	return (
 		<Container maxWidth='xl' sx={{ py: 4 }} component='main'>

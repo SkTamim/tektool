@@ -1,9 +1,13 @@
 import { Outlet } from "react-router-dom";
 import { Container } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import ShadowTypeNavigator from "./ShadowTypeNavigator";
 
 const BoxShadows = () => {
+	useEffect(() => {
+		document.title = "TekTool - Box Shadows"
+	}, [])
+
 	return (
 		<Container maxWidth='xl' sx={{ py: 4 }} component='section'>
 			<ShadowTypeNavigator />

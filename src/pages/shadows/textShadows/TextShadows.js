@@ -1,13 +1,14 @@
-import React from "react";
-import { makeStyles } from "@mui/styles";
+import React, { useEffect } from "react";
 import HeadingSecondary from "../../../components/UI/typography/HeadingSecondary";
 import TextShadowComponent from "./TextShadowComponent";
 import { Container } from "@mui/material";
 
-const useStyles = makeStyles({});
 
 const TextShadows = () => {
-	const classes = useStyles();
+	useEffect(() => {
+		document.title = "TekTool - Text Shadows"
+	}, [])
+
 	return (
 		<Container maxWidth='xl' sx={{ py: 4 }} component='section'>
 			<div style={{ textAlign: "center", padding: "1rem 0" }}>

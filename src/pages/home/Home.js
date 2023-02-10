@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import Feature from "../../components/features/Feature";
 import Hero from "./Hero";
 
@@ -50,6 +50,10 @@ const features = [
 ];
 
 const Home = () => {
+	useEffect(() => {
+		document.title = "TekTool for Developers"
+	}, [])
+
 	return (
 		<>
 			<Hero />
