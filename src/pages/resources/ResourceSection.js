@@ -22,7 +22,7 @@ const ResourceSection = (props) => {
 	} = useFetchFromFirebase(props.fetchUrl);
 
 	useEffect(() => {
-		getData([limit(8), orderBy("id", "asc")]);
+		getData([limit(4), orderBy("id", "asc")]);
 	}, []);
 
 	const loadMoreData = () => {
