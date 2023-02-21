@@ -1,13 +1,13 @@
-import { CircularProgress, Grid } from "@mui/material";
 import React, { useEffect } from "react";
+import { CircularProgress, Grid } from "@mui/material";
 import ResourceItem from "./ResourceItem";
 import ResourceLoading from "./ResourceLoading";
 import Paragraph from "../../components/UI/typography/Paragraph";
 import ButtonSecondary from "../../components/UI/button/ButtonSecondary";
+import HeadingSecondary from "../../components/UI/typography/HeadingSecondary";
 
 import useFetchFromFirebase from "../../hooks/useFetchFromFirebase";
 import { limit, orderBy } from "firebase/firestore";
-import HeadingSecondary from "../../components/UI/typography/HeadingSecondary";
 
 const ResourceSection = (props) => {
 	const {
@@ -38,7 +38,7 @@ const ResourceSection = (props) => {
 			component='section'
 			justifyContent='center'
 		>
-			<Grid item xs={12} mb={2}>
+			<Grid item xs={12} mb={2} id={props.heading.toLowerCase().replace(/ /g, '-')}>
 				<HeadingSecondary className='resource-heading'>
 					{props.icon}
 					{props.heading}
