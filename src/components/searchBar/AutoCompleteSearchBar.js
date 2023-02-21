@@ -4,13 +4,6 @@ import { Autocomplete, TextField } from "@mui/material";
 
 const AutoCompleteSearchBar = (props) => {
 
-	const options = props.searchList.map((option) => {
-		return {
-			firstLetter: 'media',
-			...option,
-		};
-	});
-
 	return (
 		<Autocomplete
 			sx={{ flexGrow: { xs: 1, sm: 0 }, textAlign: 'center' }}
