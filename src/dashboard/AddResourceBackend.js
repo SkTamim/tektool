@@ -28,6 +28,10 @@ export const getResourceData = (data, isSuccess) => {
 	// Add data to firebase
 	const addData = async (dataObject) => {
 		await setDoc(doc(database, url, dataObject.name), dataObject);
+		if (!data.resourceImage) {
+			// Send Succsed massege
+			isSuccess(true)
+		}
 	};
 
 	// Add image to firebase storage function
@@ -44,7 +48,7 @@ export const getResourceData = (data, isSuccess) => {
 					mainData = { ...mainData, thumbnail: url }
 					addData(mainData);
 
-					// Send Succsedd massege
+					// Send Succsed massege
 					isSuccess(true)
 				})
 				.catch((error) => {
@@ -70,17 +74,23 @@ export const getResourceData = (data, isSuccess) => {
 				delete mainData.category;
 				delete mainData.resourceImage;
 
-				// Compress the image=============
-				new Compressor(data.resourceImage, {
-					quality: 0.2,
-					success(compressedImg) {
-						// Add Compressed Image to firebase storage
-						addImage(compressedImg)
-					},
-					error(err) {
-						console.log("Getting error form Compressor Class " + err);
-					},
-				});
+				if (data.resourceImage) {
+					// Compress the image=============
+					new Compressor(data.resourceImage, {
+						quality: 0.2,
+						success(compressedImg) {
+							// Add Compressed Image to firebase storage
+							addImage(compressedImg)
+						},
+						error(err) {
+							console.log("Getting error form Compressor Class " + err);
+						},
+					});
+				} else {
+					mainData = { ...data, id: currentDataId };
+					delete mainData.category;
+					addData(mainData)
+				}
 			})
 			.catch((err) => {
 				console.log("Getting error form getLastId function" + err);
