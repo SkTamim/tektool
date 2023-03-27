@@ -56,8 +56,8 @@ img {
 	text-transform: capitalize !important;
 	text-align: center;
 	display: flex !important;
-	align-items: center;
-	justify-content: center;
+	/* align-items: center;
+	justify-content: center; */
 }
 .resource-heading svg {
 	font-size: calc(20px + 1vw);

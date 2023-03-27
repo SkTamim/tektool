@@ -34,11 +34,10 @@ const ResourceSection = (props) => {
 		<Grid
 			container
 			spacing={2}
-			my={4}
-			component='section'
+			component='div'
 			justifyContent='center'
 		>
-			<Grid item xs={12} mb={2} id={props.heading.toLowerCase().replace(/ /g, '-')}>
+			<Grid item xs={12} id={props.heading.toLowerCase().replace(/ /g, '-')}>
 				<HeadingSecondary className='resource-heading'>
 					{props.icon}
 					{props.heading}
