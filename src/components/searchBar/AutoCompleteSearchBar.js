@@ -1,5 +1,5 @@
 import React from "react";
-import { Autocomplete, TextField } from "@mui/material";
+import { Autocomplete, CircularProgress, TextField } from "@mui/material";
 
 
 const AutoCompleteSearchBar = (props) => {
@@ -10,12 +10,12 @@ const AutoCompleteSearchBar = (props) => {
 			options={props.searchList}
 			groupBy={(option) => option.category}
 			getOptionLabel={(option) => option.title}
-
+			loading={props.searchList.length < 1}
 
 			renderOption={(props, option) => {
 				let id = option.title.replace(/ /g, '-').toLowerCase();
 				return <a {...props}
-					href={`#${id}`} style={{ textDecoration: 'none', color: '#342C49' }}>{option.title}</a>
+					href={`#${id}`} style={{ textDecoration: 'none', textTransform: 'capitalize', color: '#342C49' }}>{option.title}</a>
 			}}
 
 			renderInput={(params) => (
@@ -25,8 +25,18 @@ const AutoCompleteSearchBar = (props) => {
 					}}
 					{...params}
 					label="Search Resource"
+					InputProps={{
+						...params.InputProps,
+						endAdornment: (
+							<React.Fragment>
+								{props.searchList.length < 1 ? <CircularProgress color="inherit" size={20} /> : null}
+								{params.InputProps.endAdornment}
+							</React.Fragment>
+						),
+					}}
 				/>
 			)}
+
 		/>
 
 	);

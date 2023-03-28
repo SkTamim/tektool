@@ -49,18 +49,6 @@ export default function Facebook() {
 			<Grid item md={4} lg={3} sm={6} xs={12}>
 				<Media />
 			</Grid>
-			<Grid item md={4} lg={3} sm={6} xs={12}>
-				<Media />
-			</Grid>
-			<Grid item md={4} lg={3} sm={6} xs={12}>
-				<Media />
-			</Grid>
-			<Grid item md={4} lg={3} sm={6} xs={12}>
-				<Media />
-			</Grid>
-			<Grid item md={4} lg={3} sm={6} xs={12}>
-				<Media />
-			</Grid>
 		</>
 	);
 }
