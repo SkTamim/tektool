@@ -1,7 +1,7 @@
 import { Button, Divider, Menu, MenuItem } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 
@@ -12,8 +12,10 @@ const useStyles = makeStyles((theme) => ({
 		color: theme.palette.darkBg.text,
 		fontWeight: 400,
 		"&.active": {
-			backgroundColor: theme.palette.darkBg.bg,
-			color: theme.palette.darkBg.text,
+			textDecoration: 'underline',
+			textDecorationThickness: '2px',
+			textUnderlineOffset: '4px',
+			fontWeight: '600',
 		},
 	},
 	dropdown: {
@@ -23,15 +25,31 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	mobileLinks: {
-		textAlign: "center",
+		textAlign: "left",
 		color: theme.palette.darkBg.bg,
 		fontWeight: 500,
 		padding: "6px 16px",
 		"&.active": {
-			backgroundColor: theme.palette.darkBg.bg,
-			color: theme.palette.darkBg.text,
+			textDecoration: 'underline',
+			textDecorationThickness: '2px',
+			textUnderlineOffset: '4px',
+			fontWeight: '600',
 		},
 	},
+	addResourceBtn: {
+		backgroundColor: theme.palette.darkBg.bg,
+		color: theme.palette.darkBg.text,
+		paddingLeft: '14px',
+		paddingRight: '14px',
+		'&:hover': {
+			backgroundColor: "#2743bc",
+		},
+		"&.active": {
+			textDecoration: 'none',
+			fontWeight: '500',
+			backgroundColor: "#2743bc",
+		},
+	}
 }));
 
 export const DesktopPages = ({ navActive }) => {
@@ -207,7 +225,24 @@ export const DesktopPages = ({ navActive }) => {
 			Learn
 		</Button>
 	);
-	const desktopPages = [home, resources, shadows, entities, learn];
+
+	const addResource = (
+		<Button
+			sx={{ m: 1 }}
+			className={`${classes.desktopLinks} ${classes.addResourceBtn}`}
+			component={NavLink}
+			to='/add-resource'
+			key='add-resource'
+			onClick={() => {
+				setIsShadowActive(false);
+				setIsEntityActive(false);
+			}}
+		>
+			Add Resource
+		</Button>
+	);
+
+	const desktopPages = [home, resources, shadows, entities, learn, addResource];
 
 	return (
 		<Box
@@ -396,6 +431,23 @@ export const MobilePages = ({ navActive }) => {
 			Learn
 		</Button>
 	);
+
+	const addResource = (
+		<Button
+			sx={{ m: 1, display: "block" }}
+			className={`${classes.mobileLinks} ${classes.addResourceBtn}`}
+			component={NavLink}
+			to='/add-resource'
+			key='add-resource'
+			onClick={() => {
+				setIsShadowActive(false);
+				setIsEntityActive(false);
+			}}
+		>
+			Add Resource
+		</Button>
+	);
+
 	const logo = (
 		<Logo
 			key='logo'
@@ -418,6 +470,7 @@ export const MobilePages = ({ navActive }) => {
 		shadows,
 		entities,
 		learn,
+		addResource
 	];
 
 	return mobilePages.map((page) => page);
