@@ -68,3 +68,14 @@ img {
 .errorMessage {
 	color: #ef0f4f;
 }
+
+/* Category Style of Add Resource form Compontent */
+.list-category {
+	font-size: 1rem;
+	color: #5445f8;
+	text-transform: uppercase;
+}
+.list-category:not(:first-child) {
+	margin-top: 15px;
+	border-top: 2px solid #eee;
+}
