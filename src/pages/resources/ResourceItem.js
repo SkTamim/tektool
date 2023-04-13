@@ -1,7 +1,6 @@
 import {
 	Card,
 	Box,
-	Button,
 	CardActions,
 	CardContent,
 	CardMedia,
@@ -37,9 +36,8 @@ const ResourceItem = ({ description, name, thumbnail, url }) => {
 	return (
 		<>
 			<Card
-				className={`${classes.resourceCard} ${
-					isExpanded ? classes.expandedCard : ""
-				}`}
+				className={`${classes.resourceCard} ${isExpanded ? classes.expandedCard : ""
+					}`}
 			>
 				<Box className={classes["image-wrap"]}>
 					<CardMedia
@@ -66,7 +64,7 @@ const ResourceItem = ({ description, name, thumbnail, url }) => {
 						target='_blank'
 						className={classes.itemTitle}
 					>
-						{name}
+						{name.replace(/-/g, ' ')}
 					</Typography>
 					<Typography
 						variant='body2'
