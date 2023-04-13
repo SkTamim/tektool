@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Button, CircularProgress, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, ListSubheader, MenuItem, Stack, TextField } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import { Button, CircularProgress, Dialog, DialogActions, DialogContent, DialogTitle, ListSubheader, MenuItem, Stack, TextField } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -118,7 +118,9 @@ const AddResourceForm = () => {
             });
         } else {
             setSuccess(true);
-            let encodedName = formValues.name.replace(/ /g, '-').toLowerCase();
+            let encodedName = formValues.name.replace(/ [-]|[-] | [—]|[—] /gi, '');
+
+            encodedName = encodedName.replace(/ /g, '-').toLowerCase();
             const finalFormValues = image
                 ? {
                     ...formValues,
@@ -192,7 +194,7 @@ const AddResourceForm = () => {
             arr.push(<ListSubheader className="list-category" key={objKey}>
                 {objKey.replace(/-/g, ' ')}
             </ListSubheader>);
-            item[objKey].map((elem, i) => {
+            item[objKey].forEach((elem) => {
                 arr.push(
                     <MenuItem sx={{ textTransform: 'capitalize' }} key={elem} value={`${objKey}/${elem}`}>
                         {elem.replace(/-/g, ' ')}

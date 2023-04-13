@@ -26,9 +26,11 @@ export const getResourceData = (data, isSuccess) => {
 		// Adding categories List
 		let categoriesUrl;
 		categoriesUrl = url.split('/');
+		const categoryName = categoriesUrl.slice(-1)[0];
 		categoriesUrl.pop();
 		categoriesUrl = categoriesUrl.toString().replace(',', '/');
-		await updateDoc(doc(database, categoriesUrl), { categories: arrayUnion(dataObject.name) });
+		await updateDoc(doc(database, categoriesUrl), { categories: arrayUnion(categoryName) });
+
 
 		if (!data.resourceImage) {
 			// Send Succsed massege
